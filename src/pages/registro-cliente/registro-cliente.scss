@@ -1,0 +1,621 @@
+@-webkit-keyframes pulse {
+    from {
+      -webkit-transform: scale3d(1, 1, 1);
+      transform: scale3d(1, 1, 1);
+    }
+  
+    50% {
+      -webkit-transform: scale3d(1.05, 1.05, 1.05);
+      transform: scale3d(1.05, 1.05, 1.05);
+    }
+  
+    to {
+      -webkit-transform: scale3d(1, 1, 1);
+      transform: scale3d(1, 1, 1);
+    }
+  }
+  
+  @keyframes pulse {
+    from {
+      -webkit-transform: scale3d(1, 1, 1);
+      transform: scale3d(1, 1, 1);
+    }
+  
+    50% {
+      -webkit-transform: scale3d(1.05, 1.05, 1.05);
+      transform: scale3d(1.05, 1.05, 1.05);
+    }
+  
+    to {
+      -webkit-transform: scale3d(1, 1, 1);
+      transform: scale3d(1, 1, 1);
+    }
+  }
+  
+  .pulse {
+    -webkit-animation-name: pulse;
+    animation-name: pulse;
+    animation:pulse 1.2s infinite ease-in-out;
+  }
+
+  @-webkit-keyframes fadeInRight {
+    from {
+      opacity: 0;
+      -webkit-transform: translate3d(100%, 0, 0);
+      transform: translate3d(100%, 0, 0);
+    }
+  
+    to {
+      opacity: 1;
+      -webkit-transform: translate3d(0, 0, 0);
+      transform: translate3d(0, 0, 0);
+    }
+  }
+  
+  @keyframes fadeInRight {
+    from {
+      opacity: 0;
+      -webkit-transform: translate3d(100%, 0, 0);
+      transform: translate3d(100%, 0, 0);
+    }
+  
+    to {
+      opacity: 1;
+      -webkit-transform: translate3d(0, 0, 0);
+      transform: translate3d(0, 0, 0);
+    }
+  }
+  
+  .fadeInRight {
+    -webkit-animation-name: fadeInRight;
+    animation-name: fadeInRight;
+  }
+  
+
+
+page-registro-cliente {
+ 
+        @import url('https://fonts.googleapis.com/css?family=Bangers');
+        @import url('https://fonts.googleapis.com/css?family=Neucha|Permanent+Marker');
+        @import url('https://fonts.googleapis.com/css?family=Grand+Hotel');
+        @import url('https://fonts.googleapis.com/css?family=Lobster');
+        @import url('https://fonts.googleapis.com/css?family=Lobster|Niramit');
+        @import url('https://fonts.googleapis.com/css?family=Anton');
+    
+        ion-navbar {
+            padding: 20px 10px !important;
+    
+            ion-icon {
+                color: white;
+            }
+        }
+
+        .elTituloForm
+        {
+            position: relative;
+        }
+        
+        .foto
+        {
+            width:50%;
+            height: 20%;
+            margin-left:25%;
+        }
+        ion-navbar ion-icon { font-size: 50px !important; }
+        .alert
+        {
+            position:absolute;
+            z-index:1000;
+            width: 80%;
+            left:10%;
+            border-radius:5%;
+            background: #2f2f2f;
+       text-align: center;
+       align-items: center;
+       height: 200px;
+       top:50%;
+       display:none;
+      // animation:fadeInRight 2s 1 ease-in-out;  
+        }
+        .mostrarAlert
+        {
+            display:flex!important;
+        }
+        .alert h1
+        {
+           font-family: 'Lobster', cursive;
+           color:white;
+        }
+      
+    /*-------------------------Animacion------------------------*/
+   
+    /*---------------------------------------------------FIN DE LA ANIMACION---------------------------------------*/  
+    ion-content
+    {
+       // background-image:url("../assets/imgs/beta/fondo2.jpg");
+        background-repeat: repeat-x repeat-y;
+     //   background-color:rgb(26,26,26)!important;
+    }  
+    .ocultar
+    {
+        display:none!important;
+    }
+    .mensajeError
+      {
+        
+          position:absolute;
+          top:0%;
+          z-index:50;
+            text-align: center;
+          align-items: center;
+          width:100%;
+          margin-top:10%;
+         
+          display:none;
+      }
+      .mensajeError h2
+    {
+        border-radius:8px;
+        border:1px solid black;
+        display:inline;
+        padding:5%;
+        background-color:#2f2f2f!important;
+       
+        color:white;
+        font-family: 'Lobster', cursive;
+    
+    }
+    .ion-page .show-page {
+        overflow: scroll!important;
+     }
+    .mensajeError2
+    {
+      
+        position:absolute;
+        top:0%;
+        z-index:50;
+          text-align: center;
+        align-items: center;
+        width:100%;
+        margin-top:10%;
+       
+        display:none;
+    }
+    .mensajeError2 h2
+    {
+      border-radius:8px;
+      border:1px solid black;
+      display:inline;
+      padding:5%;
+      background-color:#2f2f2f!important;
+      color:white;
+      font-family: 'Lobster', cursive;
+    
+    }
+    .mensajeError3
+    {
+      
+        position:absolute;
+        top:0%;
+        z-index:50;
+          text-align: center;
+        align-items: center;
+        width:100%;
+        margin-top:20%;
+       
+        display:none;
+    }
+    .mensajeError3 h2
+    {
+      border-radius:8px;
+      border:1px solid black;
+      display:inline;
+      padding:5%;
+      background-color:#2f2f2f!important;
+      color:white;
+      font-family: 'Lobster', cursive;
+    
+    }
+      }
+        body
+        
+        .fondo
+        {
+            width:100%;
+            height: 100%;
+            position:absolute;
+            z-index:-3;
+           
+        }
+        .vertical
+        {
+            display:flex;
+          align-items: center;
+            height: 100%;
+            padding-top:15%;
+            flex-direction: column;
+         width:100%;
+         position:relative;
+         z-index: 1;
+         background-color: #cccccc;
+        // background: url("../assets/imgs/beta/restaurante.jpg");
+         //background-size:100% 100%;
+        
+            overflow: scroll;
+        }
+        .ocultar
+        {
+           visibility: hidden;
+        }
+        .ocultar2
+        {
+            display:none!important;
+        }
+        
+        .cabecera
+        {
+            position: relative;
+            top:-4%;
+            text-align:center;
+            margin-bottom: -7%;
+        
+        }
+        .ocultar-fondo
+        {
+        
+                background-image: none;
+               
+      
+        }
+        .cabecera h1
+        {
+            font-family: 'Lobster', cursive;
+            font-size:4em;
+          
+           text-shadow:2px 2px white;
+            margin-top:0;
+            margin-bottom:0;
+          
+            
+        }
+        .botonesInicio
+        {
+            height: 50%;
+            width: 40%;
+        }
+      .logo
+      {
+          width:140px;
+          height: 140px;
+        
+      }
+        .form
+        {
+            width:90%;
+           
+           
+            box-sizing: border-box;
+            border-radius: 8px;
+            position:relative;
+           background-size: 100% 100%;
+         
+        }
+        .btnCerrar
+        {
+            position: absolute!important;
+            background: transparent!important;
+            width: 20px !important;
+            top: 0!important;
+            right: 0!important;
+        }
+        #btnCerrar
+        {
+            position: absolute;
+            background: transparent;
+            width: 20px;
+            top: 0;
+            right: 0;
+        }
+    
+        .tituloForm
+        {
+            text-align: center;
+            border-bottom:1px solid rgba(0, 0, 0, 0.521);
+            font-family: 'Lobster', cursive;
+    
+           
+            display:block;
+            font-size:1.8em;
+            line-height:2em; 
+            margin-top:0;
+       ;
+        
+        
+        }
+        .tituloFormT
+        {
+            background-color: transparent;
+            color:transparent;
+            border-bottom:none;
+        }
+        .form label
+        {
+            font-size:1.5em;
+            font-family: 'Neucha', cursive;
+            color:rgb(0, 0, 0);
+            
+            font-family: 'Lobster', cursive;
+    
+           letter-spacing: 1px;
+            margin-bottom:0;
+            display:inline-block;
+            font-weight: 900;
+                text-shadow: 2px 2px white;
+            border-radius: 5px;
+            margin-top:5%;
+            margin-left:5%;
+        }
+        .miInput
+        {
+            width:90%;
+            margin-bottom: 20px;
+          border:none;
+            margin-left:5%;
+            background-color:transparent; 
+         
+            padding: 8px 5px;
+            padding-left:10px;
+            letter-spacing: 1PX;
+            font-size: 17px;
+            box-sizing: none!important;
+            border-bottom:1px solid black;
+            
+            border: 1px solid #999;
+          
+            font-weight: 500;
+            background-color: rgb(255, 255, 255);
+        
+         
+        }
+        .inputT
+        {
+            background-color: transparent;
+            border-color:transparent;
+        }
+   
+          .close {
+            width: 50px;
+            height: 50px;
+            display: none;
+            position: fixed;
+            z-index: 2;
+            bottom: 5%;
+            right: 5%;
+            font-size: 30px;
+            padding: 0;
+        }
+        .mostrar {
+            display: block !important;
+        }
+        .form input[type=text]:focus
+        {
+            
+            border: 2px solid white;
+            //background-color: rgba(255, 255, 255, 0.603);
+        
+            transition:.3s;
+            
+        }
+        .form input[type=number]:focus
+        {
+            
+            border: 2px solid white;
+            //background-color: rgba(255, 255, 255, 0.603);
+        
+            transition:.3s;
+            
+        }
+        .form input[type=password]:focus
+        {
+            
+            border: 2px solid white;
+           
+            transition:.3s;
+        }
+        
+        .form input:placeholder
+        {
+            color:black;
+        }
+        .form button
+        {
+            width:80%;
+            margin-left:10%;
+            font-family: 'Niramit', sans-serif;
+    
+            font-size:1em;
+            color:white;
+            font-weight: 900;
+            border-radius:8px;
+        }
+        .usuarios
+        {
+            display:flex;
+            flex-direction: row;
+            position: relative;
+            bottom:0;
+            height: 100px;
+            width:100%;
+            margin-top:8%;
+        }
+        .usuarios button
+        {
+            margin:auto;
+            font-size: 10px;
+           
+            width:15%;
+        }
+        
+        #btnRegistrar
+        {
+            width: 50%;
+            margin-left: 25%;
+            height: 10%;
+            font-family: 'Anton', sans-serif;
+            font-size: 1.7em;
+            color:black;
+            border:2px solid black;
+            background: rgba(255, 255, 255, 0.5);
+        }
+        .tituloPagina
+        {
+            display:table;
+            margin:0 auto;
+            font-size:1.7em;
+            font-family: 'Lobster', cursive;
+            color:white;
+            
+
+        }
+        .inicial
+        {
+            width: 100%;
+            height: 50%;
+            margin-top:5%;
+            display: flex;
+            flex-direction: column;
+        }
+        .inicial h1
+        {
+            font-family: 'Niramit', sans-serif;
+            text-align:center;
+            background:#2f2f2f;
+            width: 80%;
+    font-size: 2em;
+    margin-left: 10%;
+         }
+        .botonesInicial
+        {
+            display: flex;
+            width: 100%;
+            height: 60%;
+            justify-content: space-around;
+            align-items: center;
+        }
+        @media  screen and(max-height:"1000px")
+        {
+            
+            .form {
+                height:60%;
+            }
+            
+            .form input[type=text], input[type=password] {
+                
+                margin: 8px 5%;
+            }
+        }
+        @media  screen and(max-height:"1200px")
+        {
+            
+            .form {
+                height:55%;
+            }
+            
+            .form input[type=text], input[type=password] {
+          
+                margin: 8px 5%;
+            }
+        }
+        @media  screen and(max-height:"800px")
+        {
+            .form {
+                height:88%;
+            }
+            
+           
+            
+            .form input[type=text], input[type=password] {
+              
+                margin: 8px 5%;
+            }
+        }
+        
+        
+        @media  screen and(max-height:"550px")
+        {
+          
+           
+            
+            .vertical
+            {
+             //   height: 580px;
+                padding-top:10%;
+            }
+            .form {
+                height:108%;
+            }
+            
+         
+           
+        }
+        
+        
+        @media  screen and(max-height:"600px")
+        {
+            .usuarios
+            {
+                display:flex!important;
+            }
+        
+         
+            
+            /*.form input[type=text], input[type=password], button {
+               
+                margin: 1px 5%;
+            }
+            .form label
+            {
+                margin:1px 5%;
+            }*/
+            
+            
+
+            
+         
+           
+        }
+
+        @media  screen and(max-height:"500px")
+        {
+            .usuarios
+            {
+                display:none !important;
+            }
+            .form {
+                height:120%;
+                position:relative;
+                top:-5%;
+            }
+            .cabecera
+            {
+                top:-5%;
+            }
+          /*  .form input[type=text], input[type=password], button {
+                padding:1% 5%;
+                margin: 1px 5%;
+                padding-top: 2.5%;
+               
+            }
+            .form label
+            {
+                font-size:1.4em;
+                margin:1px 5%;
+            }*/
+            .fondo img
+            {
+                height: 500px!important;
+            }
+        
+    
+    
+}
