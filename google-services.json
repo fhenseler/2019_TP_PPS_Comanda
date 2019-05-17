@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "829486067560",
+    "firebase_url": "https://proyecto-pps.firebaseio.com",
+    "project_id": "proyecto-pps",
+    "storage_bucket": "proyecto-pps.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:829486067560:android:ab5bf5aa2c8a8940",
+        "android_client_info": {
+          "package_name": "com.asgardianos.comanda"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "829486067560-duvm0gdflg76pi6556krj8mfq4jeu2qk.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCUIMNBuEzy2zckyHW5bG3mDYOPj80XxBM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "829486067560-duvm0gdflg76pi6556krj8mfq4jeu2qk.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
