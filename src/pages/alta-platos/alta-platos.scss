@@ -1,0 +1,345 @@
+page-alta-platos {
+    @import url('https://fonts.googleapis.com/css?family=Rancho');
+
+  ion-navbar {
+        padding: 20px 10px !important;
+
+        ion-icon {
+            color: white;
+        }
+    }
+  
+
+    ion-navbar ion-icon { font-size: 50px !important; }
+  
+    ion-content
+    {
+        background-color: #cccccc;
+     //   background-image:url("../assets/imgs/beta/fondo2.jpg");
+        background-repeat: repeat-x repeat-y;
+        overflow:scroll!important;
+    }
+    .titulo
+    {
+        width:80%;
+        margin-left:10%;
+        font-size: 2.5em;
+        font-family: 'Rancho', cursive;
+        text-align: center;
+        border-bottom: 2px solid black;
+    }
+    .label-md {
+        margin: 13px 0px 13px 0;
+    }
+    .opcionesBebidas
+    {
+        display:flex;
+        justify-content: space-around;
+        margin-bottom: 10%;
+        text-align: center;
+    }
+    .miSpinner
+    {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        z-index: 5000;
+        display: flex;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        background: rgba(0, 0, 0, 0.349);
+    }
+    .miSpinner img
+    {
+        width: 80%
+    }
+    .spinnerPropio
+    {
+        position: absolute;
+        z-index: 1000;
+        bottom: 16%;
+        right: 5px;
+        width: 20%;
+    }
+   
+    .altura
+    {
+        bottom:22%;
+    }
+    .alert3
+    {
+       position: absolute;
+       z-index: 5000;
+       width: 80%;
+       padding:10%;
+       left: 10%;
+       border-radius: 5%;
+       background: #2f2f2f;
+       text-align: center;
+       top: 36%;
+       justify-content: center;
+       
+       flex-direction: column;
+   display:none;
+
+    }
+    .mostrarAlert3
+    {
+        display:flex!important;
+    }
+    .alert3 h1
+    {
+       font-family: 'Lobster', cursive;
+       color:white;
+    }
+
+    .contenido, .contenido2
+    {
+       
+ 
+        width: 100%;
+    
+        display: flex;
+        flex-direction: column;
+        height: auto;
+        position:relative;
+    }
+    .elContenido
+    {
+    
+        height: 80%;
+        width: 100%;
+        height: 500px;
+        position:relative;
+    }
+    .contenido2
+    {
+        display:none;
+    }
+    .nombrePlato
+    {
+        width: 80%;
+        margin-left:10%;
+        padding: 5px;
+        border-radius: 5%;
+        font-size: 2em;
+        font-family: 'Rancho', cursive;
+        background-color: transparent;
+        border: 1px solid black;
+     color:black;
+    }
+    .nombrePlato::placeholder,.descripcion::placeholder,.tiempo::placeholder, .precio::placeholder
+    {
+        color:black!important;
+    }
+    .tiempoDiv, .precioDiv, .botones
+    {
+        position: relative;
+    }
+    .radio-md .radio-inner
+    {
+        width: 25px;
+        height: 25px;
+        background-color: #2f2f2f;
+        top:0;
+        left:0;
+    }
+    .botones
+    {
+        
+        height: 15%;
+        margin-top: 5%;
+        display: flex;
+    }
+  
+    .nombrePlato::placeholder
+    {
+        font-family: 'Rancho', cursive;
+        color:black;
+    }
+    .descripcion
+    {
+        font-family: 'Rancho', cursive;
+        margin-top: 5%;
+        height: 20%;
+        width: 80%;
+        margin-left: 10%;
+        font-size:2em;
+        background-color: transparent;
+        border: 1px solid black;
+        color: black;
+    }
+    .tiempo, .precio
+    {
+        width: 25%;
+        padding: 5px;
+        margin-top: 5%;
+        margin-left: 10%;
+        align-self: flex-start;
+        font-family: 'Rancho', cursive;
+        font-size:2em;
+        background-color: transparent;
+        border: 1px solid black;
+        color: black;
+    }
+    .ocultar
+    {
+        display:none;
+    }
+    .mostrar
+    {
+        display:flex;
+    }
+    .tiempoLabel, .precioLabel
+    {
+        font-family: 'Rancho', cursive;
+        position: absolute;
+        top: 42%;
+        left: 40%;
+        font-size: 2em;
+    }
+    .TomarFotos
+    {
+        margin-left: 5%;
+        width: 40%;
+        box-sizing: border-box;
+        height: 80%;
+     
+        font-family: 'Rancho', cursive;
+        font-size: 2em;
+      
+    }
+    .TomarFotos1
+    {
+        margin-left: 5%;
+        width: 40%;
+        box-sizing: border-box;
+        height: 80%;
+     
+        font-family: 'Rancho', cursive;
+        font-size: 1.6em;
+        border:5px solid black;
+    }
+    .Qr
+    {
+        width: 40%;
+        height: 80%;
+        margin-left: 10%;
+        font-family: 'Rancho', cursive;
+        font-size: 1.6em;
+           
+
+    }
+    
+    .opciones
+    {
+        display: flex;
+    width: 60%;
+    margin-left: 20%;
+    justify-content: space-between;
+    margin-bottom: 7%;
+    }
+    .opcion1, .opcion2, .bebidaOpcion1, .bebidaOpcion2, .bebidaOpcion3
+    {
+        font-family: 'Rancho', cursive;
+        font-size: 1.7em;
+    }
+    .tituloCheck
+    {
+        font-family: 'Rancho', cursive;
+        text-align: center;
+        font-size:2em;
+
+    }
+
+    .Qr1
+    {
+        width: 40%;
+        height: 80%;
+  
+        font-family: 'Rancho', cursive;
+        font-size: 1.6em;
+        border:5px solid black;
+        position: absolute;
+        top: 20%;
+        right: 3%;
+    }   
+    .precioLabel
+    {
+        position: absolute;
+        left: 4%;
+        font-size: 2em;
+    }
+    .precio{
+        margin-left: 10%;
+    }
+    .Foto1, .Foto2, .Foto3
+    {
+        width: 50%;
+        margin-left: 25%;
+        height: 20%;
+        visibility: hidden;
+    }
+    .laFoto1
+    {
+     
+        display:none;
+
+        position: absolute;
+        z-index: 1000;
+        width: 40%;
+        height: 18%;
+        left: 30%;
+        top: 15%;
+    }
+
+    .laFoto2
+    {
+        position:absolute;
+        z-index:1000;
+        width: 40%;
+        height: 18%;
+        left: 30%;
+        top:37%;
+        display:none;
+
+            
+      
+    }
+    .radio-icon
+    {
+        width:30px!important;
+        height: 30px!important;
+        border-color:black!important;
+    }
+    .laFoto3
+    {
+        position:absolute;
+        z-index:1000;
+        position: absolute;
+        z-index: 1000;
+        top: 58%;
+        width: 40%;
+        height: 18%;
+        left: 30%;
+        display:none;
+
+    }
+    .mostrarLaFoto
+    {
+        display: block;
+    }
+    .mostrarBoton
+    {
+        visibility: visible;
+    }
+    .Foto1 ion-icon, .Foto2 ion-icon , .Foto3 ion-icon
+    {
+        font-size: 3em;
+    }
+
+
+  
+    
+}
