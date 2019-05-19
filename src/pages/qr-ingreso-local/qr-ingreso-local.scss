@@ -1,0 +1,434 @@
+page-qr-ingreso-local {
+
+    @import url('https://fonts.googleapis.com/css?family=Anton');
+
+    @import url('https://fonts.googleapis.com/css?family=Kalam|Lobster|Sorts+Mill+Goudy');
+    @import url('https://fonts.googleapis.com/css?family=Spicy+Rice');
+    @import url('https://fonts.googleapis.com/css?family=Acme|Spicy+Rice');
+    @import url('https://fonts.googleapis.com/css?family=Rancho');
+    @import url('https://fonts.googleapis.com/css?family=Fjalla+One');
+
+    ion-navbar {
+        padding: 20px 10px !important;
+
+        ion-icon {
+            color: white;
+        }
+    }
+
+    ion-navbar ion-icon { font-size: 50px !important; }
+
+    .contenido
+    {
+       
+        width: 100%;
+        height: 100%!important;
+        display: flex;
+        flex-direction: column;
+        background-color: #2f2f2f;
+        background-size:100% 100%;
+        position:relative;
+    }
+    .tituloPag
+    {
+        font-family: 'Lobster', cursive;
+        text-align: center;
+        color:white;
+        font-size:5em;
+    }
+    .info   
+    {
+        font-family: 'Sorts Mill Goudy', serif;
+        font-size: 2em;
+        text-align: center;
+        color:white;
+        width: 80%;
+        margin-left: 10%;
+        margin-top:10%;
+        box-sizing: border-box;
+    }
+    .btnQr1
+    {
+        width: 50%;
+        margin-left: 25%;
+        padding: 20%;
+        font-size: 2em;
+        color: black;
+        font-family: 'Sorts Mill Goudy', serif;
+    }
+    .mostrarAlert2
+    {
+        display:flex!important;
+    }
+    .anonimo 
+    {
+        position: absolute;
+        z-index: 2000;
+        width: 100%;
+        height: 100%;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+      // background: rgba(20, 20, 20, 0.44);
+      background: hsla(0, 0%, 0%, 0.58);
+        display:none;
+
+    }
+    .imgAnonimo
+    {
+           /* position: absolute; */
+    width: 40%;
+    /* height: 9%; */
+    /* top: 5%; */
+    left: 30%;
+    margin-left: 30%;
+    margin-bottom: 5%;
+    margin-top: 2%;
+    }
+    .regAnonimo
+    {
+       
+        border: 3px solid black;
+        width: 90%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        border-radius: 5%;
+        background: #424242;
+        padding-bottom: 4%;
+        justify-content: flex-end;
+        position:relative;
+    }
+    .fotoAnonimo
+    {
+        width: 50%;
+        margin-left: 25%;
+        margin-top: 3%;
+        margin-bottom: 3%;
+    }
+    .regAnonimo input
+    {
+        width: 80%;
+        margin-left: 10%;
+        /* border: 1px solid red; */
+        border-radius: 5%;
+        padding: 3%;
+    }
+    .mostrarAnonimo
+    {
+        display:flex!important;
+    }
+    .elAlert2
+    {
+       position: absolute;
+       z-index: 1000;
+       width: 100%;
+       height: 100%;
+       justify-content: center;
+       align-items: center;
+       flex-direction: column;
+       background: rgba(20, 20, 20, 0.44);
+   display:none;
+    }
+    .alert2
+    {
+     
+       border-radius: 5%;
+       background:      #343434;;
+       align-items: center;
+     
+       width:90%;
+  
+       display:flex;
+       justify-content: center;
+       text-align: center;
+       flex-direction: column;
+       padding:5%;
+       
+    }
+  
+    .alert2 h1
+    {
+       font-family: 'Lobster', cursive;
+       color:white;
+    }
+    .alert2 input
+    {
+       height: 33%;
+   width: 50%;
+   padding-left: 5%;
+   padding: 8%;
+   font-size: 2em;
+    }
+    .alert2 .button
+    {
+       width: 70%;
+    
+       margin-top: 5%;
+   }
+    
+    .encuestas
+    {
+        position: absolute;
+     z-index:1000;
+        width:100%;
+      //  height: 100%;
+      background-color: black;
+        display:none;
+     //   background: url("../assets/imgs/beta/fondoQr.jpg");
+       // background-size:100% 100%;
+      //  background: url("../assets/imgs/beta/fondoQr.jpg");
+       // background-size:100% 100%;
+    }
+    .vacio
+    {
+        position: absolute;
+        z-index:1000;
+           width:100%;
+           height: 100%;
+         //  height: 100%;
+         background-color: white;
+           display:none;
+
+    }
+    .laEncuesta
+    {
+        width: 100%;
+        height: 81%;
+        margin-top: 30%;
+        overflow: scroll;
+        box-sizing: border-box;
+    border-top:5px solid black;
+     
+    }
+    .alert3
+    {
+       position: absolute;
+       z-index: 50000;
+       width: 80%;
+       padding:10%;
+       left: 10%;
+       border-radius: 5%;
+       background-color: #2f2f2f!important;
+       text-align: center;
+       top: 36%;
+       justify-content: center;
+       
+       flex-direction: column;
+   display:none;
+
+    }
+    .miSpinner
+    {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        z-index: 5000;
+        display: flex;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        background: rgba(0, 0, 0, 0.349);
+    }
+    .miSpinner img
+    {
+        width: 80%
+    }
+ 
+    .mostrarAlert3
+    {
+        display:flex!important;
+    }
+    .alert3 h1
+    {
+       font-family: 'Lobster', cursive;
+       color:white;
+    }
+    .fotos
+    {
+      
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        /* background: rgba(255, 255, 255, 0.22); */
+        width: 90%;
+        margin-left: 5%;
+  
+    }
+    .fotos h1
+    {
+        color: white;
+        width: 100%;
+        font-size: 1.7em;
+        text-align: center;
+    }
+    .subFotos
+    {
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+    }
+    .fotos img
+    {
+        width: 25%;
+        height: 100%;
+    }
+    .desplegar
+    {
+        display: block;
+    }
+    .tituloEncuestas
+    {
+        text-align: center;
+        font-family:  'Anton', sans-serif;
+        /* position: absolute; */
+        top: 5%;
+      //  COLOR: #f4f5a7;
+        /* width: 90%; */
+       
+        /* left: 5%; */
+        font-size: 2.8em;
+        padding: 0%;
+        font-size: 40px;
+        padding: 5%;
+        line-height: 100%;
+        color: white;
+    }
+    .tituloSinEncuestas
+    {
+        text-align: center;
+        font-family: 'Anton', sans-serif;
+        /* position: absolute; */
+        top: 5%;
+        width: 90%;
+        color: white;
+        /* left: 5%; */
+        background-color: #2f2f2f;
+        font-size: 2.8em;
+        padding: 0%;
+        padding: 2%;
+        border-radius: 3%;
+    }
+    .encuesta1
+    {
+     
+        border-bottom: 1px solid ;
+        padding:5% 0;
+        border-top: 2px solid ;
+      
+    }
+    .encuesta1 h2, .encuesta1 p
+    {
+       // color:white;
+        width:80%;
+        margin-left:10%;
+        text-align: left;
+        //margin-left:5%;
+    }
+    .encuesta1 p
+    {
+        font-size: 23px;
+        font-family: 'Fjalla One', sans-serif;
+      color:white;
+        text-align: center;
+        width:20%;
+        align-self: center;
+    }
+    .encuestaImg
+    {
+    position: absolute;
+        width: 10%;
+        height: 10%;
+        right: 20px;
+        animation: pulse 2s ease-in-out infinite;
+
+    }
+    .sinEncuestas
+    {
+        display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    }
+    .sinEncuestas img
+    {
+        position: absolute;
+        width: 25%;
+        height: 25%;
+        top: 10%;
+        animation: pulse 2s ease-in-out infinite;
+    }
+    .preg4
+    {
+        font-size: 20px!important;
+        width: 24%!important;
+    }
+     .encuesta1 h3
+    {
+        width:78%;
+        //margin-left:5%;
+        text-align: center;
+        font-family: 'Fjalla One', sans-serif;
+        letter-spacing: 2px;
+        color:white;
+        border-right: 1px solid;
+        padding-right: 2%;
+    }
+    .encuesta1 h2
+    {
+        /*width:80%;
+        margin-left:10%;
+        font-family: 'Spicy Rice', cursive;
+        text-align: center;
+        margin-bottom:8%;
+        color:#db1814;
+        border-bottom: 2px solid #db1814;
+        letter-spacing: 1px;*/
+
+        width: 80%;
+        margin-left: 10%;
+        font-family: 'Fjalla One', sans-serif;
+        text-transform: lowercase;      /* text-align: center; */
+        margin-bottom: 8%;
+        color: white;
+        border-bottom: 4px groove black;
+        letter-spacing: 1px;
+       
+        padding-bottom: 20px;
+        font-weight: 700;
+    }
+
+    .encuesta1 h2:first-letter
+    {
+        text-transform: uppercase;
+    }
+    .PreguntaEncuesta1
+    {
+       // color:white;
+    }
+
+    .pregResp
+    {
+        
+        
+        width: 90%;
+        margin-left: 5%;
+        padding: 2%;
+     
+        display: flex;
+        background: rgba(255, 255, 255, 0.22);
+        border-radius: 2%;
+        margin-bottom: 5px;
+    }
+    @media  screen and(max-width:"340px")
+    {
+        
+        .tituloPag {
+            font-size: 3em;
+        }
+        
+        
+    }
+
+}
