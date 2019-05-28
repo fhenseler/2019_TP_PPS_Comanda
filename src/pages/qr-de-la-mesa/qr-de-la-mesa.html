@@ -1,0 +1,412 @@
+<!--
+  Generated template for the QrDeLaMesaPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<!--<ion-header>
+
+  <ion-navbar>
+    <ion-title>qrDeLaMesa</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+
+</ion-content>-->
+
+<ion-header>
+  <ion-navbar color="dark" hideBackButton="true">
+    <!-- <ion-title class="titulo2">
+      {{usuario.tipo}}
+    </ion-title> -->
+
+    <ion-buttons start style="left: 3px;
+          position: absolute;">
+          <button ion-button (click)="volver()">
+        <ion-icon name="arrow-back"></ion-icon>
+         </button>
+        </ion-buttons>
+
+    <ion-buttons end *ngIf="usuario.tipo != 'anonimo'">
+
+
+      <button ion-button (click)="Logout()">
+        <ion-icon name="close"></ion-icon>
+      </button>
+
+     
+    </ion-buttons>
+
+  </ion-navbar>
+</ion-header>
+
+    <ion-content padding class="home">
+     <!--   <div class="center">
+          <ion-row>
+            <h1>Mesa:</h1>
+          </ion-row>
+          
+        </div>
+        <div class="center button">
+          <button ion-button class="submit-btn" >Relacionar cliente con mesa</button>
+        </div>
+
+        <div class="center button">
+          <button ion-button class="submit-btn" >Ver estado de pedido</button>
+        </div>
+
+        <div class="center button">
+          <button ion-button class="submit-btn" >Acceder a encuesta de satisfaccion</button>
+        </div>-->
+        
+      </ion-content>
+
+      <ion-content  *ngIf="probandingg">
+
+         
+
+             <!-- <div class="asdasd3" *ngIf="!sinPedidosParaEntregar">
+                  SIN PEDIDOS TERMINADOS
+                </div>-->
+
+         <div *ngIf="vistaMozo">
+
+            <div class="asdasd" *ngIf="!sinPersonasEnEspera">
+                SIN PERSONAS EN ESPERA
+              </div>
+  
+              <div class="asdasd2" *ngIf="!sinPersonasAtendidas">
+                  SIN PERSONAS ATENDIDAS
+                </div>
+
+         
+
+
+        <div *ngIf="sinPersonasEnEspera">
+
+      <h2 class="titulo">Lista de personas en espera</h2>
+
+    </div>
+
+
+      <ion-list>
+
+        <ion-item *ngFor="let item of espera">
+          <ion-thumbnail item-start>
+            <!--<img src={{item.img}}>-->
+            <ion-icon name="person"></ion-icon>
+          </ion-thumbnail>
+    
+         <!-- <h1>{{item.apellido}}, {{item.clave}}</h1>
+          <p>Empleado • {{item.tipo}}</p>
+          <p>CUIL • {{item.cuil}}</p>-->
+
+          <h1 style="color:black;">{{item.nombre}}</h1>
+          <p style="color:black;">Tipo: • {{item.tipo}}</p>
+          <p style="color:black;">Cantidad de personas: • {{item.comensales}} </p>
+          <p style="color:black;">Mesa: • {{item.mesa}} </p>
+         
+    
+          <!--<button ion-button clear item-end (click)="MostrarQr(item.correo)">-->
+              <button ion-button clear item-end (click)="ocuparMesaBarcode(item.correo,item.comensales,item.mesa)">
+            <ion-icon name="expand"></ion-icon>
+          </button>
+        </ion-item>
+    
+      </ion-list>
+
+      <div *ngIf="sinPersonasAtendidas">
+
+      <h2 class="titulo">Lista de personas atendidas</h2>
+
+      </div>
+
+      <ion-list>
+
+        <ion-item *ngFor="let item of atendidos">
+          <ion-thumbnail item-start>
+            <!--<img src={{item.img}}>-->
+            <ion-icon name="people"></ion-icon>
+          </ion-thumbnail>
+    
+        <!--  <h1>{{item.apellido}}, {{item.clave}}</h1>
+          <p>Empleado • {{item.tipo}}</p>
+          <p>CUIL • {{item.cuil}}</p>-->
+
+          <h1 style="color:black;"> {{item.nombre}}</h1>
+          <p  style="color:black;">Tipo: • {{item.tipo}}</p>
+    
+         <!-- <button ion-button clear item-end (click)="MostrarPedidos(item.mesa)">-->
+            <!--<button ion-button clear item-end (click)="probandoBarcode()">
+            <ion-icon name="restaurant"></ion-icon>
+          </button>-->
+        </ion-item>
+    
+      </ion-list>
+
+   <!--   <div *ngIf="sinPedidosParaEntregar">-->
+
+      <h2 class="titulo">Lista de pedidos para entregar</h2>
+
+    <!--</div>-->
+
+      <ion-list>
+
+        <ion-item *ngFor="let item of pedidosPruebaUno">
+          <ion-thumbnail item-start>
+           
+            <ion-icon name="people"></ion-icon>
+          </ion-thumbnail>
+
+          <button ion-button clear item-end (click)="terminarPedidoUno()">
+        
+              <ion-icon name="checkmark-circle"></ion-icon>
+            </button>
+    
+
+          <h1 style="color:black;">Mesa uno</h1>
+   
+        </ion-item>
+
+        </ion-list>
+
+        <ion-list>
+
+        <ion-item *ngFor="let item of pedidosPruebaDos">
+            <ion-thumbnail item-start>
+             
+              <ion-icon name="people"></ion-icon>
+            </ion-thumbnail>
+
+            
+            <button ion-button clear item-end (click)="terminarPedidoDos()">
+        
+                <ion-icon name="checkmark-circle"></ion-icon>
+              </button>
+  
+            <h1 style="color:black;">Mesa dos</h1>
+     
+          </ion-item>
+
+        </ion-list>
+
+        <ion-list>
+
+          <ion-item *ngFor="let item of pedidosPruebaTres">
+              <ion-thumbnail item-start>
+
+                
+               
+                <ion-icon name="people"></ion-icon>
+              </ion-thumbnail>
+        
+              <button ion-button clear item-end (click)="terminarPedidoTres()">
+        
+                  <ion-icon name="checkmark-circle"></ion-icon>
+                </button>
+    
+              <h1 style="color:black;">Mesa tres</h1>
+       
+            </ion-item>
+
+          </ion-list>
+
+          <ion-list>
+
+            <ion-item *ngFor="let item of pedidosPruebaCuatro">
+                <ion-thumbnail item-start>
+                 
+                  <ion-icon name="people"></ion-icon>
+                </ion-thumbnail>
+          
+                <button ion-button clear item-end (click)="terminarPedidoCuatro()">
+        
+                    <ion-icon name="checkmark-circle"></ion-icon>
+                  </button>
+      
+                <h1 style="color:black;">Mesa cuatro</h1>
+         
+              </ion-item>
+
+            </ion-list>
+
+            <ion-list>
+
+              <ion-item *ngFor="let item of pedidosPruebaCinco">
+                  <ion-thumbnail item-start>
+                   
+                    <ion-icon name="people"></ion-icon>
+                  </ion-thumbnail>
+            
+                  <button ion-button clear item-end (click)="terminarPedidoCinco()">
+        
+                      <ion-icon name="checkmark-circle"></ion-icon>
+                    </button>
+        
+                  <h1 style="color:black;">Mesa cinco</h1>
+           
+                </ion-item>
+
+              </ion-list>
+
+              <ion-list>
+
+                <ion-item *ngFor="let item of pedidosPruebaSeis">
+                    <ion-thumbnail item-start>
+                     
+                      <ion-icon name="people"></ion-icon>
+                    </ion-thumbnail>
+              
+                    <button ion-button clear item-end (click)="terminarPedidoSeis()">
+        
+                        <ion-icon name="checkmark-circle"></ion-icon>
+                      </button>
+          
+                    <h1 style="color:black;">Mesa seis</h1>
+             
+                  </ion-item>
+
+                </ion-list>
+
+                <ion-list>
+
+                  <ion-item *ngFor="let item of pedidosPruebaSiete">
+                      <ion-thumbnail item-start>
+                       
+                        <ion-icon name="people"></ion-icon>
+                      </ion-thumbnail>
+                
+                      <button ion-button clear item-end (click)="terminarPedidoSiete()">
+        
+                          <ion-icon name="checkmark-circle"></ion-icon>
+                        </button>
+            
+                      <h1 style="color:black;">Mesa siete</h1>
+               
+                    </ion-item>
+
+                  </ion-list>
+
+                  <ion-list>
+
+                  <ion-item *ngFor="let item of pedidosPruebaOcho">
+                      <ion-thumbnail item-start>
+                       
+                        <ion-icon name="people"></ion-icon>
+                      </ion-thumbnail>
+                
+                      <button ion-button clear item-end (click)="terminarPedidoOcho()">
+        
+                          <ion-icon name="checkmark-circle"></ion-icon>
+                        </button>
+            
+                      <h1 style="color:black;">Mesa ocho</h1>
+               
+                    </ion-item>
+
+                  </ion-list>
+
+                  <ion-list>
+
+                    <ion-item *ngFor="let item of pedidosPruebaNueve">
+                        <ion-thumbnail item-start>
+                         
+                          <ion-icon name="people"></ion-icon>
+                        </ion-thumbnail>
+
+                        <button ion-button clear item-end (click)="terminarPedidoNueve()">
+        
+                            <ion-icon name="checkmark-circle"></ion-icon>
+                          </button>
+                  
+              
+                        <h1 style="color:black;">Mesa nueve</h1>
+                 
+                      </ion-item>
+
+                    </ion-list>
+
+                    <ion-list>
+
+                      <ion-item *ngFor="let item of pedidosPruebaDiez">
+                          <ion-thumbnail item-start>
+                           
+                            <ion-icon name="people"></ion-icon>
+                          </ion-thumbnail>
+
+                          <button ion-button clear item-end (click)="terminarPedidoDiez()">
+        
+                              <ion-icon name="checkmark-circle"></ion-icon>
+                            </button>
+                    
+                
+                          <h1 style="color:black;">Mesa diez</h1>
+                   
+                        </ion-item>
+    
+      </ion-list>
+
+     <!-- <ion-list>
+
+          <ion-item *ngFor="let item of pedidosPruebaUno">
+            <ion-thumbnail item-start>
+             
+              <ion-icon name="people"></ion-icon>
+            </ion-thumbnail>
+  
+            <button ion-button clear item-end (click)="terminarPedidoUno()">
+          
+                <ion-icon name="checkmark-circle"></ion-icon>
+              </button>
+      
+  
+            <h1 style="color:black;">Mesa Uno </h1>
+     
+          </ion-item>
+
+          </ion-list>-->
+
+      
+        
+
+    </div>
+
+    <div *ngIf="vistaCliente" style="padding-top: 40px;background-color: lightblue;background-size: auto;">
+
+       <!-- <button ion-button clear item-end (click)="mostrarTiempoBarcode()">
+            <ion-icon name="expand"></ion-icon>
+          </button>-->
+
+          <button ion-button class="submit-btn" color="red" class="botonAlta" (click)="mostrarTiempoBarcode()" >Escanear mesa</button>
+
+
+    </div>
+
+    </ion-content>
+
+
+    <div [ngClass]="{'alert':true,'ocultar':ocultarAlert}">
+
+      <div class="alert-message animation-target">
+        <h1>{{alertTitulo}}</h1>
+        <p>{{alertMensaje}}</p>
+        <div class="botones">
+    
+          <button ion-button outline (click)="alertHandler()">{{alertMensajeBoton}}</button>
+        </div>
+      </div>
+    
+    </div>
+
+
+      <!--<ion-footer *ngIf="cerrarqr">
+        <ion-toolbar>
+          <ion-title>Footer</ion-title>
+          <button ion-button color="red" class="close" (click)="OcultarLectorQR()">
+            <ion-icon name="close"></ion-icon>
+          </button>
+        </ion-toolbar>
+      </ion-footer>-->
