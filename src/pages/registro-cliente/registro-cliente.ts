@@ -474,12 +474,6 @@ export class RegistroClientePage {
         }
         scanear()
       {
-    
-       
-       
-        
-       
- 
           this.options = { prompt : "Escaneá tu DNI", formats: "PDF_417" }
 
           this.barcodeScanner.scan(this.options).then((barcodeData) => {
