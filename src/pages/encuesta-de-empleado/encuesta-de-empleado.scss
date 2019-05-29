@@ -1,0 +1,208 @@
+page-encuesta-de-empleado {
+
+    ion-navbar {
+        padding: 20px 10px !important;
+        
+
+        ion-icon {
+            color: white;
+        }
+    }
+
+    ion-navbar ion-icon { font-size: 50px !important; }
+
+    
+    ion-item {
+        //background: transparent!important;
+       text-align: center !important;
+        border-radius: 20px ;
+        background-color: "red";
+        margin-top: 3px !important;
+        max-width: 80% !important;
+        margin-left: auto;
+        margin-right: auto;
+        
+        
+        
+
+        
+       
+        
+        
+    }
+
+    
+
+    .cds{
+       // background-color: #ffffff !important;
+       
+       // background: url("../../assets/imgs/gamma/beigeqrmesa.jpg");
+        //background:cover;
+        
+      //  background-color: #f0f0f0 !important;
+   //   background-image: url('../../assets/imgs/gamma/encuestafinal.jpg');
+       background-color: #cccccc;
+        background-size: cover; 
+        background-position: center; 
+
+        
+    }
+
+    .lb{
+        color: black !important;
+        font-size: 190%;
+        margin-bottom: 0px !important;
+        margin-top: 2px !important;
+        padding-top: 5px !important;
+        text-align: center;
+        font-family: 'roboto', cursive;
+        text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
+       
+        //border-radius: 20px !important;
+    }
+
+    /*.list{
+        border-radius: 20px ;
+        margin-top: 5px !important;
+        background-color: #ffd000 !important;
+        margin-bottom: 5px;
+    }*/
+
+    canvas{ height:60% !important; }
+    div { height: 95%; }
+
+    .item-block {
+        margin:0 auto;
+        
+        
+
+        
+    }
+
+    .ion-button
+    {
+        //align-items: center;
+        
+    }
+
+    .button-md {
+
+
+        width: 50%;
+        margin-left: 30%;
+        margin-right: 30%
+    }
+
+    .scroll-content {
+       //background-image: url('../../assets/imgs/gamma/encuestafinal.jpg');
+       
+        //background-size: cover; 
+        //background-position: center; 
+    }
+
+
+    ion-grid {
+        //height: 100%;
+        border-collapse: collapse;
+        //border: 2px solid black;
+    
+        
+      }
+        ion-row {
+          //height: 33.33%;
+          //height: 90%;
+          height: 33%;
+        }
+    
+    
+    
+        .h2
+        {
+            font-family: 'Lobster', cursive;
+        }
+
+        .canvas {
+            width: 100%;
+            height: 80%;
+            //display: inline-block;
+            //position: relative;
+            //display:none;
+            //position: absolute;
+           // z-index: 10000;
+            //background: white;
+            
+           // padding-top: 5%;
+           // padding-bottom: 5%;
+           //padding-right:50%;
+        }
+        .altoCanvas
+        {    width: 170% !important;
+            margin-left: -35% !important;
+            height: 300px!important;
+            height: 60%!important;
+        }
+
+        .asd{
+            color: black!important;
+            font-size: 200%;
+            margin-bottom: 0px !important;
+            margin-top: 2px !important;
+            padding-top: 5px !important;
+            text-align: center;
+            font-family: 'roboto', cursive;
+            text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
+            
+            width: 90%;
+          
+            margin-left: 5%;
+        }
+
+        .contenidoCharts
+        {
+            width:100%;
+            height: 100%;
+
+        }
+
+        .range-md.range-has-pin {
+             padding-top: 0px; 
+        }
+
+
+        .realizarEncuesta{
+            color: white!important;
+            font-size: 200%;
+            margin-bottom: 0px !important;
+            margin-top: 2px !important;
+            padding-top: 5px !important;
+            text-align: center;
+            font-family: 'Lobster', cursive;
+            text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+            background: #2f2f2f;
+        }
+
+        .resultadoEncuesta
+        {
+            color: white!important;
+            font-size: 300%;
+            margin-bottom: 0px !important;
+            margin-top: 2px !important;
+            padding-top: 5px !important;
+            text-align: center;
+            font-family: 'Lobster', cursive;
+            text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+         
+        }
+
+        .probabilidad
+        {
+            width: 100%;
+        }
+        
+        .pregunta1 , .pregunta3 , .pregunta4 , .pregunta5
+        {
+            margin-bottom: -50%;
+        }
+        
+
+}
