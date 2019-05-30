@@ -1,0 +1,137 @@
+<ion-header>
+  <ion-navbar color="dark">
+
+    <ion-buttons>
+      <button ion-button (click)="VolverAtras()">
+        <ion-icon name="arrow-back"></ion-icon>
+      </button>
+    </ion-buttons>
+
+    <ion-buttons end>
+      <button ion-button (click)="Logout()">
+        <ion-icon name="close"></ion-icon>
+      </button>
+    </ion-buttons>
+
+  </ion-navbar>
+</ion-header>
+
+<div class="imagen" [ngClass]="{'ocultar':ocultarImagen,'opacidad':true}">
+
+  <ion-icon name="close" (click)="OcultarImagen()"></ion-icon>
+  <img [src]="image" alt="">
+
+</div>
+
+<ion-content>
+
+  <h1>Califique la conducta de {{usuario.apellido}}, {{usuario.nombre}}.</h1>
+
+  <div class="encuesta">
+    <div id="divCanvas" class="canvas">
+      <canvas baseChart [data]="pregunta1Data" [labels]="pregunta1Labels" [chartType]="doughnutChartType" (chartHover)="chartHovered($event)"
+        (chartClick)="chartClicked($event)"></canvas>
+    </div>
+
+    <div class="mi-range">
+
+      <ion-range [(ngModel)]="conducta" color="dark" pin="true" min="1" max="5" snaps="true" style="width: 100%;position: relative;"
+        (ngModelChange)="ModificarTextoRange()"></ion-range>
+      <span>{{textoRange}}</span>
+
+    </div>
+  </div>
+
+  <h1>¿Tuvo algún inconveniente con {{usuario.apellido}}, {{usuario.nombre}} en horas de servicio?</h1>
+
+  <div class="encuesta">
+
+    <div id="divCanvas" class="canvas">
+
+      <canvas baseChart [data]="pregunta2Data" [labels]="pregunta2Labels" [chartType]="doughnutChartType" (chartHover)="chartHovered($event)"
+        (chartClick)="chartClicked($event)"></canvas>
+    </div>
+
+    <ion-list radio-group [(ngModel)]="inconveniente">
+      <ion-item>
+        <ion-label>Sí</ion-label>
+        <ion-radio color="dark" value="1"></ion-radio>
+      </ion-item>
+      <ion-item>
+        <ion-label>No</ion-label>
+        <ion-radio color="dark" value="0"></ion-radio>
+      </ion-item>
+    </ion-list>
+
+  </div>
+
+  <h1>Seleccione el/los aspectos a tener en cuenta de {{usuario.apellido}}, {{usuario.nombre}}.</h1>
+
+  <div class="encuesta">
+
+    <div id="divCanvas" class="canvas">
+      <canvas baseChart [data]="pregunta3Data" [labels]="pregunta3Labels" [chartType]="doughnutChartType" (chartHover)="chartHovered($event)"
+        (chartClick)="chartClicked($event)"></canvas>
+    </div>
+
+    <ion-list style="left: -75px;">
+
+      <ion-item>
+        <ion-label>Mala conducta</ion-label>
+        <ion-checkbox color="dark" [(ngModel)]="aspectos.item1"></ion-checkbox>
+      </ion-item>
+
+      <ion-item>
+        <ion-label>Mala presentación</ion-label>
+        <ion-checkbox color="dark" [(ngModel)]="aspectos.item2"></ion-checkbox>
+      </ion-item>
+
+      <ion-item>
+        <ion-label>Poca formalidad</ion-label>
+        <ion-checkbox color="dark" [(ngModel)]="aspectos.item3"></ion-checkbox>
+      </ion-item>
+
+    </ion-list>
+
+  </div>
+
+  <h1>¿Le gustaría que {{usuario.apellido}}, {{usuario.nombre}} siguiese presentandose en el restaurante?</h1>
+
+  <div class="encuesta">
+
+    <div id="divCanvas" class="canvas">
+      <canvas baseChart [data]="pregunta4Data" [labels]="pregunta4Labels" [chartType]="doughnutChartType" (chartHover)="chartHovered($event)"
+        (chartClick)="chartClicked($event)"></canvas>
+    </div>
+
+    <select [(ngModel)]="prescencia">
+      <option value="1">Sí, definitivamente.</option>
+      <option value="0">No, en absoluto.</option>
+    </select>
+
+  </div>
+
+  <h1>Escriba su comentario.</h1>
+
+  <div class="encuesta">
+
+    <textarea rows="4" cols="50" placeholder="Escribe tu comentario aquí..." [(ngModel)]="opinion"></textarea>
+
+  </div>
+
+  <button ion-button color="dark" class="enviar" [disabled]="estadoBoton" (click)="HacerEncuesta()">Enviar encuesta</button>
+
+  <h1 style="margin-bottom: 30px;" *ngIf="!ocultarSpinner && pregunta5.length > 1">Comentarios</h1>
+
+    <div class="comentarios" *ngFor="let item of pregunta5">
+
+      <img src="{{item.img}}" (click)="MostrarImagen(item.img)" />
+      <h2>{{item.nombre}}</h2>
+      <h5>({{item.fecha}} Hs.)</h5>
+      <p>{{item.comentario}}</p>
+
+    </div>
+
+  <app-spinner [ngClass]="{'ocultar':!estadoBoton}"></app-spinner>
+
+</ion-content>
