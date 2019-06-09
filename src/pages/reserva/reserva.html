@@ -1,0 +1,64 @@
+<ion-header>
+  <ion-navbar color="dark">
+
+    <!-- <ion-title>{{usuario.tipo}}</ion-title> -->
+
+    <ion-buttons end>
+      <button ion-button (click)="VerReservas()">
+        <ion-icon name="calendar"></ion-icon>
+      </button>
+      <button ion-button (click)="Logout()">
+        <ion-icon name="close"></ion-icon>
+      </button>
+    </ion-buttons>
+
+  </ion-navbar>
+</ion-header>
+
+<div [ngClass]="{'alert':true,'ocultar':ocultarAlert}">
+
+  <div class="alert-message animation-target">
+    <h1>{{alertTitulo}}</h1>
+    <p>{{alertMensaje}}</p>
+    <div class="botones">
+
+      <button ion-button outline (click)="alertHandler()">{{alertMensajeBoton}}</button>
+    </div>
+  </div>
+
+</div>
+
+<ion-content>
+
+  <div class="horizontal-container">
+
+    <div class="vertical-container">
+
+      <h1>Reservar</h1>
+
+      <ion-item>
+        <ion-label>Fecha</ion-label>
+        <ion-datetime displayFormat="DD/MMM/YYYY" monthShortNames={{nombreDeLosMeses}} min={{minimo}} max={{maximo}}
+          cancelText="Cancelar" doneText="Aceptar" [(ngModel)]="fecha">
+        </ion-datetime>
+      </ion-item>
+
+      <ion-item style="width: 50px;">
+        <ion-label>Hora</ion-label>
+        <ion-datetime displayFormat="HH:mm" cancelText="Cancelar" doneText="Aceptar" [(ngModel)]="hora"></ion-datetime>
+      </ion-item>
+
+      <ion-item>
+        <ion-label>Personas</ion-label>
+        <ion-datetime displayFormat="YY" min="2001" max="2008" cancelText="Cancelar" doneText="Aceptar" [(ngModel)]="cantidadPersonas">
+        </ion-datetime>
+      </ion-item>
+
+      <button ion-button outline color="light" class="alta" [disabled]="estadoBoton" (click)="Reservar()">Reservar</button>
+    </div>
+
+  </div>
+
+  <app-spinner [ngClass]="{'ocultar':ocultarSpinner}"></app-spinner>
+
+</ion-content>

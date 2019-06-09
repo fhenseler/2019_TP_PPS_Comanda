@@ -1,0 +1,72 @@
+<ion-header>
+  <ion-navbar color="dark">
+
+    <ion-buttons left>
+      <button ion-button menuToggle>
+        <ion-icon name="beer"></ion-icon>
+      </button>
+    </ion-buttons>
+
+    <ion-title>{{usuario.tipo}}</ion-title>
+
+    <ion-buttons end *ngIf="usuario.tipo != 'anonimo'">
+      <button ion-button (click)="Logout()">
+        <ion-icon name="close"></ion-icon>
+      </button>
+    </ion-buttons>
+
+  </ion-navbar>
+</ion-header>
+
+<div [ngClass]="{'alert':true,'ocultar':ocultarAlert}">
+
+  <div class="alert-message animation-target">
+    <h1>{{alertTitulo}}</h1>
+    <p>{{alertMensaje}}</p>
+    <div class="botones">
+
+      <button ion-button outline (click)="alertHandler()">{{alertMensajeBoton}}</button>
+    </div>
+  </div>
+
+</div>
+
+<ion-menu [content]="content">
+  <ion-header>
+    <ion-toolbar color="dark">
+      <ion-title>Menú</ion-title>
+    </ion-toolbar>
+  </ion-header>
+  <ion-content>
+    <ion-list>
+
+      <div>
+        <img src={{usuario.img}} class="img-menu" />
+        <div class="nombre-menu">{{usuario.apellido}}, {{usuario.nombre}} ({{usuario.tipo}})</div>
+      </div>
+
+      <hr class="hr-menu" />
+
+      <button ion-item *ngFor="let item of acciones" (click)="Redireccionar(item.ruta)">{{item.accion}}</button>
+      <button ion-item (click)="IrAPerfil()">Ver mi perfil</button>
+      <button ion-item (click)="AlternarSonidos()">
+        <ng-container *ngIf="sonidos != 'false'; else activar">Desactivar sonidos</ng-container>
+        <ng-template #activar>Activar sonidos</ng-template>
+      </button>
+      <button ion-item (click)="Logout()" *ngIf="usuario.tipo != 'anonimo'">Cerrar sesión</button>
+
+    </ion-list>
+  </ion-content>
+</ion-menu>
+
+<ion-nav #content swipeBackEnabled="false"></ion-nav>
+
+<ion-content class="card-background-page" padding>
+
+  <button ion-button *ngFor="let item of acciones" (click)="Redireccionar(item.ruta)">
+    <div class="sombreado"></div>
+    <img src="../../assets/imgs/alfa/{{item.img}}" />
+    <span>{{item.accion}}</span>
+  </button>
+
+</ion-content>
