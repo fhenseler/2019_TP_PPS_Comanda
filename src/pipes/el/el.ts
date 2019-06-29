@@ -15,6 +15,7 @@ export class ElPipe implements PipeTransform {
   transform(value: string, ...args) {
     let retorno="";
 	   if(value=="1")
+		   
 	   {
 		   retorno="Horribles";
 	   }
