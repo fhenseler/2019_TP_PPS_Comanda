@@ -8,6 +8,12 @@ import firebase from "firebase";
 import { LoginPage } from '../login/login';
 
 
+/**
+ * Generated class for the JuegoPage page.
+ *
+ * See https://ionicframework.com/docs/components/#navigation for more info on
+ * Ionic pages and navigation.
+ */
 
 @IonicPage()
 @Component({
@@ -64,7 +70,7 @@ export class JuegoPage {
         this.animacion.push(false);
 
       }
-      /*this.fotos.push({img:"assets/imgs/beta/empanada.jpg", clave:1, id:1});
+      this.fotos.push({img:"assets/imgs/beta/empanada.jpg", clave:1, id:1});
       this.fotos.push({img:"assets/imgs/beta/pizza.jpg", clave:2, id:2});
       this.fotos.push({img:"assets/imgs/beta/hamburguesa.jpg", clave:3, id:3});
       this.fotos.push({img:"assets/imgs/beta/milanesa.jpg", clave:4, id:4});
@@ -79,7 +85,7 @@ export class JuegoPage {
       this.fotos.push({img:"assets/imgs/beta/vino.jpg", clave:5, id:13});
       this.fotos.push({img:"assets/imgs/beta/jugo.jpg", clave:6, id:14});
       this.fotos.push({img:"assets/imgs/beta/papas.jpg", clave:7, id:15});
-      this.fotos.push({img:"assets/imgs/beta/fondoPedido.jpg", clave:8, id:16 });*/
+      this.fotos.push({img:"assets/imgs/beta/fondoPedido.jpg", clave:8, id:16 });
 
       this. fotos = this.fotos.sort(function() {return Math.random() - 0.5});
       this.puntos=0;
@@ -116,6 +122,17 @@ this.gano=false;
     {
       console.log(this.jugadorActual);
       console.log(this.claveJugador);
+
+      let usuariosRef = firebase.database().ref("usuarios/"+this.claveJugador);
+      //this.claveActual=key;
+      usuariosRef.set(this.jugadorActual).then(()=>{
+
+        this.mensaje="El tiempo se acabó, juego terminado, ustéd pierde";
+        this.mostrarAlert=true;
+        setTimeout(()=>{
+    
+          this.mostrarAlert=false;
+        
           this.navCtrl.pop();
         }, 4000);
 

@@ -120,7 +120,7 @@ export class TomarPedidoPage {
   public vistaBartenderMesaNueve:boolean;
   public vistaBartenderMesaDiez:boolean;
 
-  /*public ponerTiempoMesaCocinaUnoIcono:boolean
+  public ponerTiempoMesaCocinaUnoIcono:boolean
   public terminarPedidoMesaCocinaUnoIcono:boolean;
   public ponerTiempoMesaCocinaDosIcono:boolean
   public terminarPedidoMesaCocinaDosIcono:boolean;
@@ -158,7 +158,7 @@ export class TomarPedidoPage {
   public pedidosDeliveryCocinero:Array<any>;
   public pedidosDeliveryBartender:Array<any>;
   public vistaDeliveryCocinero:boolean;
-  public vistaDeliveryBartender:boolean;*/
+  public vistaDeliveryBartender:boolean;
 
 
   constructor(public navCtrl: NavController, public navParams: NavParams,private authInstance: AngularFireAuth,private toastCtrl: ToastController) 

@@ -1,0 +1,153 @@
+page-reserva {
+
+    .scroll-content {
+       background-color: #cccccc;
+       // background-image: url('../../assets/imgs/alfa/reserva-background.jpg');
+        background-size: cover; 
+        background-position: center; 
+    }
+
+    ion-navbar {
+        padding: 20px 10px !important;
+
+        ion-icon {
+            color: white;
+        }
+    }
+
+    ion-navbar ion-icon { font-size: 50px !important; }
+
+    body {
+        width: 100%;
+    }
+
+    div.horizontal-container {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    div.vertical-container {
+        display: flex;
+        background-size: cover;
+        font-family: roboto;
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+        background-color: rgba(0, 0, 0, 0.5);
+        // padding-top: 20px;
+    }
+
+    img {
+        width: 140px;
+        height: auto;
+    }
+
+    h1 {
+        font-size: 80px;
+        font-weight: 100;
+        color: white;
+        font-family: lobster;
+        margin-bottom: 25px;
+    }
+
+    div.inputs {
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+        align-items: center;
+        width: 75%;
+        margin: 15px 0 15px 0;
+
+        span {
+            font-size: 30px;
+            margin: 0 5px 0 5px;
+        }
+    }
+
+    ion-item {
+        width: 230px !important;
+        background-color: color($colors, dark-grey) !important;
+        margin-bottom: 10px !important;
+    }
+
+    ion-datetime {
+        color: white;
+    }
+
+    ion-label {
+        color: white !important;
+        margin: auto !important;
+        width: 100% !important;
+    }
+
+    .item-inner {
+        border: none !important;
+    }
+
+    .picker-wrapper {
+        background-color: green !important;
+    }
+
+    input {
+        width: 230px;
+        border: gray solid 2px;
+        padding: 10px;
+        margin: 20px 0 20px 0;
+        font-size: 25px;
+        transition-duration: .3s;
+        transition-property: border-bottom-color font-size;
+        background-color: rgba(255, 255, 255, 0.8);
+        caret-color: color($colors, dark-grey);
+    }
+
+    input:focus {
+        border-color: color($colors, dark-grey);;
+        background-color: rgb(255, 255, 255); 
+    }
+
+    .alta {
+        padding: 30px;
+        width: 230px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 10px;
+        font-size: 20px;
+        text-transform: none;
+    }
+
+    .ocultar {
+        display: none !important;
+    }
+
+    .animation-target {
+        animation-name: jelly;
+        animation-duration: 1000ms;
+        animation-iteration-count: 1;
+        animation-timing-function: linear;
+        animation-fill-mode: both;
+    }
+
+}
+
+
+.picker-toolbar {
+    background-color: #FCE5C6 !important;
+
+    button {
+        color: color($colors, dark-grey) !important;
+        text-transform: capitalize;
+        font-size: 20px;
+    }
+}
+
+.picker-wrapper {
+    background-color: #FCE5C6 !important;
+
+    .picker-opt-selected {
+        color: color($colors, dark-grey) !important;
+    }
+}
+

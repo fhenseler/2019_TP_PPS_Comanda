@@ -9,7 +9,6 @@ import { PrincipalPage } from "../pages/principal/principal";
 
 import { FcmProvider } from '../providers/fcm/fcm';
 
-import { tap } from 'rxjs/operators';
 import { ToastController } from 'ionic-angular';
 
 import { NativeAudio } from '@ionic-native/native-audio';
@@ -20,12 +19,8 @@ import { NativeAudio } from '@ionic-native/native-audio';
 export class MyApp {
   rootPage:any = LoginPage;
 
-  constructor(platform: Platform, statusBar: StatusBar,
-     splashScreen: SplashScreen,modalCtrl: ModalController,
-      fcm: FcmProvider, toastCtrl: ToastController,
-      private nativeAudio: NativeAudio,
-      public toastController: ToastController) {
-      platform.ready().then(() => {
+  constructor(platform: Platform, statusBar: StatusBar, splashScreen: SplashScreen,modalCtrl: ModalController, fcm: FcmProvider, toastCtrl: ToastController,private nativeAudio: NativeAudio) {
+    platform.ready().then(() => {
       // Okay, so the platform is ready and our plugins are available.
       // Here you can do any higher level native things you might need.
 
@@ -36,25 +31,6 @@ export class MyApp {
       }
       let splash = modalCtrl.create(SplashPage);
             splash.present();
-
-            
-    fcm.getToken();
-    fcm.onNotifications().subscribe(
-      (msg) => {
-        if (platform.is('ios')) {
-          this.presentToast(msg.aps.alert);
-        } else {
-          this.presentToast(msg.body);
-        }
-      });
     });
-  }
-
-  private async presentToast(message) {
-    const toast = await this.toastController.create({
-      message,
-      duration: 3000
-    });
-    toast.present();
   }
 }
