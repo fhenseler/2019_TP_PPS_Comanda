@@ -1,0 +1,377 @@
+page-encuesta-cliente {
+    @import url('https://fonts.googleapis.com/css?family=Anton');
+
+    ion-navbar {
+        padding: 20px 10px !important;
+
+        ion-icon {
+            color: white;
+        }
+    }
+    ion-content
+    {
+        background-color: #2f2f22;
+    //    background: url(../assets/imgs/beta/fondoQr.jpg);
+    background-size: 100% 100%;
+    }
+    scroll-content {
+        overflow-y: hidden;
+    }
+
+    ion-navbar ion-icon { font-size: 50px !important; }
+    .alert3
+    {
+       position: absolute;
+       z-index: 5000;
+       width: 80%;
+       padding:10%;
+       left: 10%;
+       border-radius: 5%;
+       background: #2f2f2f;
+       text-align: center;
+       top: 36%;
+       justify-content: center;
+       
+       flex-direction: column;
+   display:none;
+
+    }
+    .mostrarAlert3
+    {
+        display:flex!important;
+    }
+    .alert3 h1
+    {
+       font-family: 'Lobster', cursive;
+       color:white;
+    }
+    .canvas {
+        width: 100%;
+        height: 100%;
+        display: inline-block;
+        position: relative;
+        display:none;
+        position: absolute;
+        z-index: 10000;
+        background: #2f2f2f;
+        
+        padding-top: 5%;
+        padding-bottom: 5%;
+    }
+    .canvas h2
+    {
+     
+        margin-top: 10%;
+        
+        text-align: center;
+        border-bottom: 2px solid black;
+        width: 80%;
+        margin-left: 10%;
+        padding-bottom: 2%;
+        font-family: 'Anton', sans-serif;
+
+    }
+    .cerrarChart
+    {
+        position: absolute;
+        right: 5px;
+        top: 0;
+      
+        background: #e0e0e0;
+    /*    border: none;
+        outline: none;
+        box-shadow: none;
+        */
+    }
+    .altoCanvas
+    {
+        height: 75% !important;
+        width: 180% !important;
+      
+        margin-left: -40% !important;
+
+    }
+    .cerrarChart ion-icon
+    {
+        color:black;
+        font-size: 3em;
+    }
+   
+    
+    .mostrarChart
+    {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+    .btnChart
+    {
+        width: 40%;
+    /* height: 40%!important; */
+    height: 60px!important;
+    margin-top: 5%;
+    }
+    .iconoChart
+    {
+        font-size:3em;
+    }
+   .tituloPreg
+   {
+    font-family: 'Lobster', cursive;
+    text-align: center;
+   }
+
+
+
+    .scroll-content
+    {
+       overflow-x: hidden!important;
+    }
+/*    ion-content
+    {
+        overflow: hidden!important;
+    }*/
+    .contenido
+    {
+       
+        width: 100%;
+        height: 100%!important;
+        display: flex;
+        flex-direction: column;
+        background-color: #2f2f22;
+      //  background: url("../assets/imgs/beta/fondoQr.jpg");
+        background-size:100% 100%;
+        position:relative;
+        justify-content: center;
+    }
+    .tituloPag
+    {
+        font-family: 'Lobster', cursive;
+        text-align: center;
+        color:white;
+      
+    }
+    .info   
+    {
+        font-family: 'Sorts Mill Goudy', serif;
+        text-align: center;
+        color: white;
+        width: 100%;
+margin-top:0;
+        -webkit-box-sizing: border-box;
+        box-sizing: border-box;
+        font-size: 1.7em;
+    }
+   .contestada
+   {
+       background:white;
+       color:black!important;
+   }
+    .contenido .btnContenido
+    {
+        width: 60%;
+        margin-left: 20%;
+        box-sizing: border-box;
+        font-family: 'Sorts Mill Goudy', serif;
+        margin-top: 0;
+        margin-bottom: 2%;
+        color:white;
+        padding: 5%!important;
+    }
+    .esUnaPregunta
+    {
+        position: relative;
+    }
+    .errorImg
+    {
+        width: 10%;
+        position: absolute;
+        right: 5%;
+        top: 0;
+    }
+
+  .cerrarChartFotos
+  {
+  
+    position: absolute;
+    right: 5px;
+    top: 0;
+    background:  #2f2f2f;
+  }
+    .yaRespondido
+    {
+        background: white;
+        color:black;
+    }
+    .pregunta1, .pregunta2, .pregunta3, .pregunta4, .pregunta5, .pregunta6
+    {
+        position: absolute;
+        z-index: 1000;
+        width:100%;
+        height:100%;
+        display:flex;
+        justify-content: center;
+        align-items:center; 
+        background: rgba(0, 0, 0, 0.84);
+    }
+    ion-item
+    {
+        background: #2f2f2f!important;
+    }
+       .laPregunta1, .laPregunta2, .laPregunta3, .laPregunta4, .laPregunta5, .laPregunta6
+    {
+        width: 100%;
+        height: 70%;
+
+        background: #2f2f2f;
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        transition: .5s;
+        position: relative;
+    }
+    .noMostrar
+    {
+        display: none;
+        transition: .5s;
+    }
+    /*.laPregunta1 h2, .laPregunta2 h2, .laPregunta3 h2 , .laPregunta4 h2, .laPregunta5 h2 , .laPregunta6 h2  {
+        font-family: 'Lobster', cursive;
+     text-align: center;
+    }*/
+
+    .item-input .label-md, .item-select .label-md, .item-datetime .label-md
+    {
+
+        color: black!important;
+    }
+    .item-inner
+    {
+        border-bottom:1px solid black!important;
+    }
+    .select-md .select-icon .select-icon-inner
+    {
+        color:black!important;
+    } 
+    .radio-md .radio-checked {
+        border-color: black;
+    }
+    .radio-md .radio-inner
+    {
+        background-color:white!important;
+    }
+    .radio-md .radio-icon {
+    
+        border-color: black;
+    }
+    .range-md .range-knob {
+        background: black;
+    }
+    .range-md .range-bar-active 
+    {
+        bottom: 0;
+        width: auto;
+        background: black;
+    }
+    .Foto
+    {
+        width: 50%;
+        padding: 10%;
+        height: 40%;
+    }
+    .camaraIcon
+    {
+        font-size: 3em;
+    }
+    .enviar
+    {
+        width: 80%;
+        margin-left: 10%;
+        box-sizing: border-box;
+        font-family: 'Sorts Mill Goudy', serif;
+       
+        
+        color:white;
+        padding: 5%!important;
+
+    }
+    .aceptar
+    {
+        width: 80%;
+      
+        box-sizing: border-box;
+        font-family: 'Sorts Mill Goudy', serif;
+       
+        
+        color:white;
+        padding: 5%!important;
+
+    }
+    .laFoto1
+    {
+        position: absolute;
+        z-index: 1000;
+        width: 50%;
+        height: 16%;
+        left: 25%;
+        top: 23.5%;
+        display: none; 
+    }
+    .laFoto2
+    {
+        position: absolute;
+        z-index: 1000;
+        width: 50%;
+        height: 16%;
+        left: 25%;
+        top: 42.5%;
+        display: none; 
+    }
+    .laFoto3
+    {
+        position: absolute;
+        z-index: 1000;
+        width: 50%;
+        height: 16%;
+        left: 25%;
+        top: 61%;
+        display: none; 
+    }
+    .miInput::placeholder
+    {
+        font-family: 'Sorts Mill Goudy', serif;
+
+    }
+    .ocultarBoton
+    {
+        visibility: hidden;
+
+    }
+    .mostrarLaFoto
+    {
+        display:block;
+
+      }  
+      
+      .scroll-content
+      {
+          overflow: hidden;
+      }
+    @media  screen and(max-height:"480px")
+    {
+        .laPregunta5 {
+            height:100%;
+        }
+        
+       .scroll-content
+       {
+           overflow: hidden;
+       }
+        
+   
+    }
+    
+
+}

@@ -1,0 +1,302 @@
+page-mapa-de-ruta {
+
+  ion-navbar {
+    padding: 20px 10px !important;
+    
+
+    ion-icon {
+        color: white;
+    }
+}
+
+ion-navbar ion-icon { font-size: 50px !important; }
+
+  .ion-md-chatboxes:before {
+    content: "\f2b6";
+    font-size: 30px;
+    padding-right: 10px;
+    
+}
+
+  .ion-md-contact:before {
+    content: "\f2d6";
+    font-size: 70px;
+}
+
+.ion-md-checkmark-circle:before {
+  content: "\f2bb";
+  font-size: 30px;
+}
+
+
+  .scroll-content {
+
+    //overflow: auto;  /* redundant, but just in case */
+    //display: flex; /* redundant, but just in case */
+    //flex-direction: column-reverse;
+}
+
+ion-content {
+  background-color: #cccccc;
+  //background-image: url('../../assets/imgs/gamma/Navigation.gif');
+  background-size: cover; 
+  background-position: center;
+}
+
+.item
+{
+  background-color: transparent;
+  //width:50%;
+
+}
+
+.item-block
+{
+
+}
+
+.item-md
+{
+
+}
+
+    .chat-message {
+        width: 80%;
+        min-height: 40px;
+        margin-bottom: 12px;
+        .right-bubble {
+            position: relative;
+            //background: #f0f8ff;
+            background: #dcf8c2;
+            border-top-left-radius: .4em;
+          border-bottom-left-radius: .4em;
+          border-bottom-right-radius: .4em;
+          padding: 5px 10px 10px;
+          left: 15%;
+          span.msg-name {
+            font-size: 12px;
+            font-weight: bold;
+            color: green;
+          }
+          span.msg-date {
+            font-size: 10px;
+          }
+        }
+
+        .right-bubble:after {
+            content: '';
+            position: absolute;
+            right: 0;
+            top: 0;
+            width: 0;
+            height: 0;
+            border: 27px solid transparent;
+            //border-left-color: red;
+            border-right: 0;
+            border-top: 0;
+            margin-top: -13.5px;
+            margin-right: -27px;           
+        }
+        .left-bubble {
+            position: relative;
+            //background: #dcf8c2;
+            background: #f0f8ff;
+          border-top-right-radius: .4em;
+          border-bottom-left-radius: .4em;
+          border-bottom-right-radius: .4em;
+          padding: 5px 10px 10px;
+          left: 5%;
+          span.msg-name {
+            font-size: 12px;
+            font-weight: bold;
+            color: blue;
+          }
+          span.msg-date {
+            font-size: 10px;
+          }
+        }
+    
+        .left-bubble:after {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 0;
+            height: 0;
+            border: 27px solid transparent;
+            //border-right-color: #ffffff;
+            border-left: 0;
+            border-top: 0;
+            margin-top: -13.5px;
+            margin-left: -27px;
+        }
+      }
+
+      ion-footer {
+        background: white;
+        ion-icon {
+          padding: 10px;
+          font-size: 20px;
+          color: green;
+        }
+      }
+      .chat-status {
+        min-height: 49px;
+        .chat-date {
+          display: block;
+          font-size: 10px;
+          font-style: italic;
+          color: #fff;
+          text-shadow: 0px -1px 0px #222, 0px 1px 0px #aaa;
+          height: 15px;
+          left: 10%;
+          right:10%;
+        }
+        .chat-content-center {
+          padding: 5px 10px;
+          background-color: #e1e1f7;
+          border-radius: 6px;
+          font-size: 12px;
+          color: #555;
+          height: 34px;
+          left: 10%;
+          right:10%;
+        }
+      }
+
+    /*  .scroll-content {
+        background-image: url('../../assets/imgs/gamma/encuesta.jpg');
+        background-size: cover; 
+        background-position: center; 
+    }
+    */
+
+    .home {
+        background-color: #2f2f2f !important;
+      }
+
+      ion-item {
+      /*  background: transparent!important;
+        text-align: center !important;
+        border-radius: 20px ;
+        background-color:transparent;
+        margin-top: 3px !important;
+        max-width: 50% !important;
+        margin-left: auto;
+        margin-right: auto;*/
+        
+
+        
+       
+        
+        
+    }
+  
+    .item-block {
+        //margin:0 auto;
+        
+        
+
+        
+    }
+
+    .logo-row {
+      text-align: center;
+      align-items: center;
+      margin-left: 15%;
+      width: 70%;
+    }
+
+
+    .lb{
+      /*color: black !important;
+      font-size: 100%;
+      margin-bottom: 0px !important;
+      margin-top: 2px !important;
+      padding-top: 5px !important;
+      text-align: center;*/
+      //border-radius: 20px !important;
+      color: black!important;
+        font-size: 200%;
+        margin-bottom: 0px !important;
+        margin-top: 2px !important;
+        padding-top: 5px !important;
+        text-align: center;
+        font-family: 'roboto', cursive;
+        text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
+  }
+
+  .que{
+
+    color: black!important;
+        font-size: 150%;
+        margin-bottom: 0px !important;
+        margin-top: 2px !important;
+        padding-top: 5px !important;
+        text-align: center;
+        font-family: 'roboto', cursive;
+        text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
+
+  }
+
+  .queDos{
+
+    color: #2f2f2f!important;
+        font-size: 80%;
+        margin-bottom: 0px !important;
+        margin-top: 2px !important;
+        padding-top: 5px !important;
+        text-align: center;
+        font-family: 'roboto', cursive;
+        text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
+
+  }
+
+  .realizarEncuesta{
+    color: white!important;
+    font-size: 200%;
+    margin-bottom: 0px !important;
+    margin-top: 2px !important;
+    padding-top: 5px !important;
+    text-align: center;
+    font-family: 'Lobster', cursive;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+    
+}
+
+.titulo2{
+  color: white!important;
+  font-size: 300%;
+  margin-bottom: 0px !important;
+  margin-top: 2px !important;
+  padding-top: 5px !important;
+  text-align: center;
+  font-family: 'Roboto', cursive;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+
+
+}
+
+.asdasd{
+  color: black!important;
+  font-size: 190%;
+  margin-bottom: 0px !important;
+  margin-top: 170px !important;
+  padding-top: 5px !important;
+  //text-align: center;
+  font-family: 'roboto';
+  text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
+  background-color:#2f2f2f;
+  height:100px;
+  text-align: center;
+  vertical-align: middle;
+  line-height: 100px; 
+  
+  
+
+}
+
+    
+
+
+}
