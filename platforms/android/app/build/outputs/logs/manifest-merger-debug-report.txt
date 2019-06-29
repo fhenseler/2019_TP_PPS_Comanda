@@ -1,0 +1,190 @@
+-- Merging decision tree log ---
+provider#org.apache.cordova.camera.FileProvider
+INJECTED from C:\Users\Fede\Desktop\vardump-collab\platforms\android\app\src\main\AndroidManifest.xml:12:9-14:20
+	android:grantUriPermissions
+		ADDED from C:\Users\Fede\Desktop\vardump-collab\platforms\android\app\src\main\AndroidManifest.xml:12:92-126
+	android:authorities
+		INJECTED from C:\Users\Fede\Desktop\vardump-collab\platforms\android\app\src\main\AndroidManifest.xml
+		ADDED from C:\Users\Fede\Desktop\vardump-collab\platforms\android\app\src\main\AndroidManifest.xml:12:19-66
+	android:exported
+		ADDED from C:\Users\Fede\Desktop\vardump-collab\platforms\android\app\src\main\AndroidManifest.xml:12:67-91
+	android:name
+		ADDED from C:\Users\Fede\Desktop\vardump-collab\platforms\android\app\src\main\AndroidManifest.xml:12:127-180
+manifest
+ADDED from C:\Users\Fede\Desktop\vardump-collab\platforms\android\app\src\main\AndroidManifest.xml:2:1-25:12
+INJECTED from C:\Users\Fede\Desktop\vardump-collab\platforms\android\app\src\main\AndroidManifest.xml:2:1-25:12
+INJECTED from C:\Users\Fede\Desktop\vardump-collab\platforms\android\app\src\main\AndroidManifest.xml:2:1-25:12
+INJECTED from C:\Users\Fede\Desktop\vardump-collab\platforms\android\app\src\main\AndroidManifest.xml:2:1-25:12
+MERGED from [:barcodescanner-release-2.1.5:] C:\Users\Fede\.gradle\caches\transforms-1\files-1.1\barcodescanner-release-2.1.5.aar\b75989d41f15f5031cb9d20ae8fb69a6\AndroidManifest.xml:2:1-14:12
+MERGED from [:CordovaLib] C:\Users\Fede\Desktop\vardump-collab\platforms\android\CordovaLib\build\intermediates\library_manifest\debug\AndroidManifest.xml:20:1-27:12
+MERGED from [com.android.support:support-v4:27.1.1] C:\Users\Fede\.gradle\caches\transforms-1\files-1.1\support-v4-27.1.1.aar\c1b79d7c9bb6a968df4742c71f93a1af\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-media-compat:27.1.1] C:\Users\Fede\.gradle\caches\transforms-1\files-1.1\support-media-compat-27.1.1.aar\a0ac4127a24b65bfb46c1598cd0fd2c3\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-fragment:27.1.1] C:\Users\Fede\.gradle\caches\transforms-1\files-1.1\support-fragment-27.1.1.aar\c4d2b512ebb5c5b34a5d2f4df745d45d\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-core-ui:27.1.1] C:\Users\Fede\.gradle\caches\transforms-1\files-1.1\support-core-ui-27.1.1.aar\e352a1eff3a6010e2930d315c0a0bbd7\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-core-utils:27.1.1] C:\Users\Fede\.gradle\caches\transforms-1\files-1.1\support-core-utils-27.1.1.aar\5d926923b70c2263ba5d574ecb0be897\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-compat:27.1.1] C:\Users\Fede\.gradle\caches\transforms-1\files-1.1\support-compat-27.1.1.aar\9b3838903cf091a192ac75da61d91c8c\AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:runtime:1.1.0] C:\Users\Fede\.gradle\caches\transforms-1\files-1.1\runtime-1.1.0.aar\c00e760a9d0fba701ff0e22b02872825\AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:livedata-core:1.1.0] C:\Users\Fede\.gradle\caches\transforms-1\files-1.1\livedata-core-1.1.0.aar\5616578ddba053f2765ec38fbe03f3ac\AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:viewmodel:1.1.0] C:\Users\Fede\.gradle\caches\transforms-1\files-1.1\viewmodel-1.1.0.aar\d5bc6be9d2044d80f4bd967cde750bf4\AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.core:runtime:1.1.0] C:\Users\Fede\.gradle\caches\transforms-1\files-1.1\runtime-1.1.0.aar\3fe93729c6912e9741515255ebc24af5\AndroidManifest.xml:17:1-22:12
+INJECTED from C:\Users\Fede\Desktop\vardump-collab\platforms\android\app\src\main\AndroidManifest.xml:2:1-25:12
+INJECTED from C:\Users\Fede\Desktop\vardump-collab\platforms\android\app\src\main\AndroidManifest.xml:2:1-25:12
+INJECTED from C:\Users\Fede\Desktop\vardump-collab\platforms\android\app\src\main\AndroidManifest.xml:2:1-25:12
+	package
+		ADDED from C:\Users\Fede\Desktop\vardump-collab\platforms\android\app\src\main\AndroidManifest.xml:2:98-131
+		INJECTED from C:\Users\Fede\Desktop\vardump-collab\platforms\android\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\Fede\Desktop\vardump-collab\platforms\android\app\src\main\AndroidManifest.xml
+	android:versionName
+		ADDED from C:\Users\Fede\Desktop\vardump-collab\platforms\android\app\src\main\AndroidManifest.xml:2:70-97
+		INJECTED from C:\Users\Fede\Desktop\vardump-collab\platforms\android\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\Fede\Desktop\vardump-collab\platforms\android\app\src\main\AndroidManifest.xml
+	android:hardwareAccelerated
+		ADDED from C:\Users\Fede\Desktop\vardump-collab\platforms\android\app\src\main\AndroidManifest.xml:2:11-45
+	xmlns:android
+		ADDED from C:\Users\Fede\Desktop\vardump-collab\platforms\android\app\src\main\AndroidManifest.xml:2:132-190
+	android:versionCode
+		ADDED from C:\Users\Fede\Desktop\vardump-collab\platforms\android\app\src\main\AndroidManifest.xml:2:46-69
+		INJECTED from C:\Users\Fede\Desktop\vardump-collab\platforms\android\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\Fede\Desktop\vardump-collab\platforms\android\app\src\main\AndroidManifest.xml
+supports-screens
+ADDED from C:\Users\Fede\Desktop\vardump-collab\platforms\android\app\src\main\AndroidManifest.xml:3:5-191
+	android:largeScreens
+		ADDED from C:\Users\Fede\Desktop\vardump-collab\platforms\android\app\src\main\AndroidManifest.xml:3:49-76
+	android:smallScreens
+		ADDED from C:\Users\Fede\Desktop\vardump-collab\platforms\android\app\src\main\AndroidManifest.xml:3:132-159
+	android:normalScreens
+		ADDED from C:\Users\Fede\Desktop\vardump-collab\platforms\android\app\src\main\AndroidManifest.xml:3:77-105
+	android:xlargeScreens
+		ADDED from C:\Users\Fede\Desktop\vardump-collab\platforms\android\app\src\main\AndroidManifest.xml:3:160-188
+	android:resizeable
+		ADDED from C:\Users\Fede\Desktop\vardump-collab\platforms\android\app\src\main\AndroidManifest.xml:3:106-131
+	android:anyDensity
+		ADDED from C:\Users\Fede\Desktop\vardump-collab\platforms\android\app\src\main\AndroidManifest.xml:3:23-48
+uses-permission#android.permission.INTERNET
+ADDED from C:\Users\Fede\Desktop\vardump-collab\platforms\android\app\src\main\AndroidManifest.xml:4:5-67
+	android:name
+		ADDED from C:\Users\Fede\Desktop\vardump-collab\platforms\android\app\src\main\AndroidManifest.xml:4:22-64
+application
+ADDED from C:\Users\Fede\Desktop\vardump-collab\platforms\android\app\src\main\AndroidManifest.xml:5:5-17:19
+MERGED from [:barcodescanner-release-2.1.5:] C:\Users\Fede\.gradle\caches\transforms-1\files-1.1\barcodescanner-release-2.1.5.aar\b75989d41f15f5031cb9d20ae8fb69a6\AndroidManifest.xml:11:5-12:19
+MERGED from [:barcodescanner-release-2.1.5:] C:\Users\Fede\.gradle\caches\transforms-1\files-1.1\barcodescanner-release-2.1.5.aar\b75989d41f15f5031cb9d20ae8fb69a6\AndroidManifest.xml:11:5-12:19
+	android:supportsRtl
+		ADDED from C:\Users\Fede\Desktop\vardump-collab\platforms\android\app\src\main\AndroidManifest.xml:5:121-147
+	android:label
+		ADDED from C:\Users\Fede\Desktop\vardump-collab\platforms\android\app\src\main\AndroidManifest.xml:5:88-120
+	android:hardwareAccelerated
+		ADDED from C:\Users\Fede\Desktop\vardump-collab\platforms\android\app\src\main\AndroidManifest.xml:5:18-52
+	android:icon
+		ADDED from C:\Users\Fede\Desktop\vardump-collab\platforms\android\app\src\main\AndroidManifest.xml:5:53-87
+activity#com.asgardianos.comanda.MainActivity
+ADDED from C:\Users\Fede\Desktop\vardump-collab\platforms\android\app\src\main\AndroidManifest.xml:6:9-11:20
+	android:label
+		ADDED from C:\Users\Fede\Desktop\vardump-collab\platforms\android\app\src\main\AndroidManifest.xml:6:97-134
+	android:launchMode
+		ADDED from C:\Users\Fede\Desktop\vardump-collab\platforms\android\app\src\main\AndroidManifest.xml:6:135-165
+	android:windowSoftInputMode
+		ADDED from C:\Users\Fede\Desktop\vardump-collab\platforms\android\app\src\main\AndroidManifest.xml:6:257-299
+	android:configChanges
+		ADDED from C:\Users\Fede\Desktop\vardump-collab\platforms\android\app\src\main\AndroidManifest.xml:6:19-96
+	android:theme
+		ADDED from C:\Users\Fede\Desktop\vardump-collab\platforms\android\app\src\main\AndroidManifest.xml:6:194-256
+	android:name
+		ADDED from C:\Users\Fede\Desktop\vardump-collab\platforms\android\app\src\main\AndroidManifest.xml:6:166-193
+intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
+ADDED from C:\Users\Fede\Desktop\vardump-collab\platforms\android\app\src\main\AndroidManifest.xml:7:13-10:29
+	android:label
+		ADDED from C:\Users\Fede\Desktop\vardump-collab\platforms\android\app\src\main\AndroidManifest.xml:7:28-65
+action#android.intent.action.MAIN
+ADDED from C:\Users\Fede\Desktop\vardump-collab\platforms\android\app\src\main\AndroidManifest.xml:8:17-69
+	android:name
+		ADDED from C:\Users\Fede\Desktop\vardump-collab\platforms\android\app\src\main\AndroidManifest.xml:8:25-66
+category#android.intent.category.LAUNCHER
+ADDED from C:\Users\Fede\Desktop\vardump-collab\platforms\android\app\src\main\AndroidManifest.xml:9:17-77
+	android:name
+		ADDED from C:\Users\Fede\Desktop\vardump-collab\platforms\android\app\src\main\AndroidManifest.xml:9:27-74
+activity#com.google.zxing.client.android.CaptureActivity
+ADDED from C:\Users\Fede\Desktop\vardump-collab\platforms\android\app\src\main\AndroidManifest.xml:15:9-311
+	android:clearTaskOnLaunch
+		ADDED from C:\Users\Fede\Desktop\vardump-collab\platforms\android\app\src\main\AndroidManifest.xml:15:19-51
+	android:windowSoftInputMode
+		ADDED from C:\Users\Fede\Desktop\vardump-collab\platforms\android\app\src\main\AndroidManifest.xml:15:261-308
+	android:exported
+		ADDED from C:\Users\Fede\Desktop\vardump-collab\platforms\android\app\src\main\AndroidManifest.xml:15:114-138
+	android:configChanges
+		ADDED from C:\Users\Fede\Desktop\vardump-collab\platforms\android\app\src\main\AndroidManifest.xml:15:52-113
+	android:theme
+		ADDED from C:\Users\Fede\Desktop\vardump-collab\platforms\android\app\src\main\AndroidManifest.xml:15:202-260
+	android:name
+		ADDED from C:\Users\Fede\Desktop\vardump-collab\platforms\android\app\src\main\AndroidManifest.xml:15:139-201
+activity#com.google.zxing.client.android.encode.EncodeActivity
+ADDED from C:\Users\Fede\Desktop\vardump-collab\platforms\android\app\src\main\AndroidManifest.xml:16:9-112
+	android:label
+		ADDED from C:\Users\Fede\Desktop\vardump-collab\platforms\android\app\src\main\AndroidManifest.xml:16:19-40
+	android:name
+		ADDED from C:\Users\Fede\Desktop\vardump-collab\platforms\android\app\src\main\AndroidManifest.xml:16:41-109
+uses-sdk
+ADDED from C:\Users\Fede\Desktop\vardump-collab\platforms\android\app\src\main\AndroidManifest.xml:18:5-74
+INJECTED from C:\Users\Fede\Desktop\vardump-collab\platforms\android\app\src\main\AndroidManifest.xml:18:5-74
+MERGED from [:barcodescanner-release-2.1.5:] C:\Users\Fede\.gradle\caches\transforms-1\files-1.1\barcodescanner-release-2.1.5.aar\b75989d41f15f5031cb9d20ae8fb69a6\AndroidManifest.xml:7:5-9:41
+MERGED from [:barcodescanner-release-2.1.5:] C:\Users\Fede\.gradle\caches\transforms-1\files-1.1\barcodescanner-release-2.1.5.aar\b75989d41f15f5031cb9d20ae8fb69a6\AndroidManifest.xml:7:5-9:41
+MERGED from [:CordovaLib] C:\Users\Fede\Desktop\vardump-collab\platforms\android\CordovaLib\build\intermediates\library_manifest\debug\AndroidManifest.xml:25:5-44
+MERGED from [:CordovaLib] C:\Users\Fede\Desktop\vardump-collab\platforms\android\CordovaLib\build\intermediates\library_manifest\debug\AndroidManifest.xml:25:5-44
+MERGED from [com.android.support:support-v4:27.1.1] C:\Users\Fede\.gradle\caches\transforms-1\files-1.1\support-v4-27.1.1.aar\c1b79d7c9bb6a968df4742c71f93a1af\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-v4:27.1.1] C:\Users\Fede\.gradle\caches\transforms-1\files-1.1\support-v4-27.1.1.aar\c1b79d7c9bb6a968df4742c71f93a1af\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-media-compat:27.1.1] C:\Users\Fede\.gradle\caches\transforms-1\files-1.1\support-media-compat-27.1.1.aar\a0ac4127a24b65bfb46c1598cd0fd2c3\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-media-compat:27.1.1] C:\Users\Fede\.gradle\caches\transforms-1\files-1.1\support-media-compat-27.1.1.aar\a0ac4127a24b65bfb46c1598cd0fd2c3\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-fragment:27.1.1] C:\Users\Fede\.gradle\caches\transforms-1\files-1.1\support-fragment-27.1.1.aar\c4d2b512ebb5c5b34a5d2f4df745d45d\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-fragment:27.1.1] C:\Users\Fede\.gradle\caches\transforms-1\files-1.1\support-fragment-27.1.1.aar\c4d2b512ebb5c5b34a5d2f4df745d45d\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-ui:27.1.1] C:\Users\Fede\.gradle\caches\transforms-1\files-1.1\support-core-ui-27.1.1.aar\e352a1eff3a6010e2930d315c0a0bbd7\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-ui:27.1.1] C:\Users\Fede\.gradle\caches\transforms-1\files-1.1\support-core-ui-27.1.1.aar\e352a1eff3a6010e2930d315c0a0bbd7\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-utils:27.1.1] C:\Users\Fede\.gradle\caches\transforms-1\files-1.1\support-core-utils-27.1.1.aar\5d926923b70c2263ba5d574ecb0be897\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-utils:27.1.1] C:\Users\Fede\.gradle\caches\transforms-1\files-1.1\support-core-utils-27.1.1.aar\5d926923b70c2263ba5d574ecb0be897\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-compat:27.1.1] C:\Users\Fede\.gradle\caches\transforms-1\files-1.1\support-compat-27.1.1.aar\9b3838903cf091a192ac75da61d91c8c\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-compat:27.1.1] C:\Users\Fede\.gradle\caches\transforms-1\files-1.1\support-compat-27.1.1.aar\9b3838903cf091a192ac75da61d91c8c\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:runtime:1.1.0] C:\Users\Fede\.gradle\caches\transforms-1\files-1.1\runtime-1.1.0.aar\c00e760a9d0fba701ff0e22b02872825\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:runtime:1.1.0] C:\Users\Fede\.gradle\caches\transforms-1\files-1.1\runtime-1.1.0.aar\c00e760a9d0fba701ff0e22b02872825\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:livedata-core:1.1.0] C:\Users\Fede\.gradle\caches\transforms-1\files-1.1\livedata-core-1.1.0.aar\5616578ddba053f2765ec38fbe03f3ac\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:livedata-core:1.1.0] C:\Users\Fede\.gradle\caches\transforms-1\files-1.1\livedata-core-1.1.0.aar\5616578ddba053f2765ec38fbe03f3ac\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:viewmodel:1.1.0] C:\Users\Fede\.gradle\caches\transforms-1\files-1.1\viewmodel-1.1.0.aar\d5bc6be9d2044d80f4bd967cde750bf4\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:viewmodel:1.1.0] C:\Users\Fede\.gradle\caches\transforms-1\files-1.1\viewmodel-1.1.0.aar\d5bc6be9d2044d80f4bd967cde750bf4\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.core:runtime:1.1.0] C:\Users\Fede\.gradle\caches\transforms-1\files-1.1\runtime-1.1.0.aar\3fe93729c6912e9741515255ebc24af5\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.core:runtime:1.1.0] C:\Users\Fede\.gradle\caches\transforms-1\files-1.1\runtime-1.1.0.aar\3fe93729c6912e9741515255ebc24af5\AndroidManifest.xml:20:5-44
+INJECTED from C:\Users\Fede\Desktop\vardump-collab\platforms\android\app\src\main\AndroidManifest.xml:18:5-74
+	android:targetSdkVersion
+		ADDED from C:\Users\Fede\Desktop\vardump-collab\platforms\android\app\src\main\AndroidManifest.xml:18:42-71
+	android:minSdkVersion
+		ADDED from C:\Users\Fede\Desktop\vardump-collab\platforms\android\app\src\main\AndroidManifest.xml:18:15-41
+		INJECTED from C:\Users\Fede\Desktop\vardump-collab\platforms\android\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\Fede\Desktop\vardump-collab\platforms\android\app\src\main\AndroidManifest.xml
+uses-permission#android.permission.WRITE_EXTERNAL_STORAGE
+ADDED from C:\Users\Fede\Desktop\vardump-collab\platforms\android\app\src\main\AndroidManifest.xml:19:5-81
+	android:name
+		ADDED from C:\Users\Fede\Desktop\vardump-collab\platforms\android\app\src\main\AndroidManifest.xml:19:22-78
+uses-permission#android.permission.MODIFY_AUDIO_SETTINGS
+ADDED from C:\Users\Fede\Desktop\vardump-collab\platforms\android\app\src\main\AndroidManifest.xml:20:5-80
+	android:name
+		ADDED from C:\Users\Fede\Desktop\vardump-collab\platforms\android\app\src\main\AndroidManifest.xml:20:22-77
+uses-permission#android.permission.READ_PHONE_STATE
+ADDED from C:\Users\Fede\Desktop\vardump-collab\platforms\android\app\src\main\AndroidManifest.xml:21:5-75
+	android:name
+		ADDED from C:\Users\Fede\Desktop\vardump-collab\platforms\android\app\src\main\AndroidManifest.xml:21:22-72
+uses-permission#android.permission.CAMERA
+ADDED from C:\Users\Fede\Desktop\vardump-collab\platforms\android\app\src\main\AndroidManifest.xml:22:5-65
+	android:name
+		ADDED from C:\Users\Fede\Desktop\vardump-collab\platforms\android\app\src\main\AndroidManifest.xml:22:22-62
+uses-permission#android.permission.FLASHLIGHT
+ADDED from C:\Users\Fede\Desktop\vardump-collab\platforms\android\app\src\main\AndroidManifest.xml:23:5-69
+	android:name
+		ADDED from C:\Users\Fede\Desktop\vardump-collab\platforms\android\app\src\main\AndroidManifest.xml:23:22-66
+uses-feature#android.hardware.camera
+ADDED from C:\Users\Fede\Desktop\vardump-collab\platforms\android\app\src\main\AndroidManifest.xml:24:5-84
+	android:required
+		ADDED from C:\Users\Fede\Desktop\vardump-collab\platforms\android\app\src\main\AndroidManifest.xml:24:58-81
+	android:name
+		ADDED from C:\Users\Fede\Desktop\vardump-collab\platforms\android\app\src\main\AndroidManifest.xml:24:19-57
+meta-data#android.support.FILE_PROVIDER_PATHS
+ADDED from C:\Users\Fede\Desktop\vardump-collab\platforms\android\app\src\main\AndroidManifest.xml:13:13-123
+	android:resource
+		ADDED from C:\Users\Fede\Desktop\vardump-collab\platforms\android\app\src\main\AndroidManifest.xml:13:75-120
+	android:name
+		ADDED from C:\Users\Fede\Desktop\vardump-collab\platforms\android\app\src\main\AndroidManifest.xml:13:24-74

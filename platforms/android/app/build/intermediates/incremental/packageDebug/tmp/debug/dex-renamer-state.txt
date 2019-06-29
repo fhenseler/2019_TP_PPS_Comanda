@@ -1,0 +1,4 @@
+#Sat Jun 29 01:00:47 ART 2019
+base.0=C\:\\Users\\Fede\\Desktop\\vardump-collab\\platforms\\android\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\0
+path.0=classes.dex
+renamed.0=classes.dex
