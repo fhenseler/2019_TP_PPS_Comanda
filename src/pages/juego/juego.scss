@@ -1,0 +1,267 @@
+
+
+@-webkit-keyframes shake {
+    from,
+    to {
+      -webkit-transform: translate3d(0, 0, 0);
+      transform: translate3d(0, 0, 0);
+    }
+  
+    10%,
+    30%,
+    50%,
+    70%,
+    90% {
+      -webkit-transform: translate3d(-10px, 0, 0);
+      transform: translate3d(-10px, 0, 0);
+    }
+  
+    20%,
+    40%,
+    60%,
+    80% {
+      -webkit-transform: translate3d(10px, 0, 0);
+      transform: translate3d(10px, 0, 0);
+    }
+  }
+  
+  @keyframes shake {
+    from,
+    to {
+      -webkit-transform: translate3d(0, 0, 0);
+      transform: translate3d(0, 0, 0);
+    }
+  
+    10%,
+    30%,
+    50%,
+    70%,
+    90% {
+      -webkit-transform: translate3d(-10px, 0, 0);
+      transform: translate3d(-10px, 0, 0);
+    }
+  
+    20%,
+    40%,
+    60%,
+    80% {
+      -webkit-transform: translate3d(10px, 0, 0);
+      transform: translate3d(10px, 0, 0);
+    }
+  }
+  
+
+page-juego {
+    @import url('https://fonts.googleapis.com/css?family=Acme|Spicy+Rice');
+    ion-navbar {
+        padding: 20px 10px !important;
+
+        ion-icon {
+            color: white;
+        }
+    }
+  
+
+    ion-navbar ion-icon { font-size: 50px !important; }
+    .scroll-content
+    {
+        overflow: hidden;
+    }
+    .tiempo
+    {
+        font-family: 'Spicy Rice', cursive;
+        
+    }
+    .tituloJuego
+{
+   
+    text-align: center;
+    font-family: 'Spicy Rice', cursive;
+    letter-spacing: 1px;
+
+
+}
+    .juego
+{
+    width:100%;
+    height: 100%;
+    display:flex;
+    align-content: center;
+    flex-direction: column;
+    text-align: center;
+    box-sizing: border-box;
+    background-color: #2f2f2f;
+    position:relative;
+    justify-content: space-evenly;
+}
+.fila1, .fila2, .fila3, .fila4
+{
+    box-sizing: border-box;
+    width:100%;
+    
+    display: flex;
+    justify-content: space-around;
+    height: 15%;
+}
+.fila1 img
+{
+    box-sizing: border-box;
+   
+    margin-top: 1%;
+    border: 2px solid white;
+    border-radius: 5%;
+    background-color: #cccccc;
+}
+.fila2 img
+{
+    box-sizing: border-box;
+
+    margin-top: 1%;
+    border: 2px solid white;
+    border-radius: 5%;
+    background-color: #cccccc;
+}
+.taparJuego
+{
+    position:absolute;
+    z-index: 1000;
+    width:100%;
+    height: 100%;
+    display: none;
+}
+.iniciarJuego
+{
+    position:absolute;
+    z-index: 1000;
+    width:100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #2f2f2f;
+
+
+}
+.iniciarJuegoFalse
+{
+    display:none;
+
+}
+.mensajeInicio
+{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 70%;
+    text-align: center;
+ 
+ 
+
+    border: 4px solid black;
+    border-radius: 5%;
+    padding: 5%;
+    background: #2f2f2f;
+}
+.mensajeInicio h1
+{
+    font-family: 'Spicy Rice', cursive;
+    font-size:2em;
+}
+.quitarFoto
+{
+    display:none;
+}
+.alert
+{
+    position: absolute;
+    z-index: 1000;
+    width: 80%;
+    left: 10%;
+    border-radius: 5%;
+    background: #53adb8;
+    text-align: center;
+ 
+    display: flex;
+  
+    justify-content: center;
+    /* height: 250px; */
+  
+    align-items: center;
+    flex-direction: column;
+    padding: 5%;
+    border: 5px solid black;
+// animation:fadeInRight 2s 1 ease-in-out;  
+}
+.superAlert
+{
+    position: absolute;
+    z-index: 2000;
+    width: 100%;
+    height: 100%;
+    display: none;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+.alert img
+{
+    width:60%;
+}
+.mostrarAlert
+{
+    display:flex;
+}
+.alert h1
+{
+   font-family: 'Lobster', cursive;
+   color:white;
+   width:80%;
+}
+.p1
+{
+    margin-bottom:0;
+}
+.mensajeInicio p
+{
+    font-family: 'Spicy Rice', cursive;
+    font-size:1.5em;
+ 
+}
+
+.taparJuegoTrue
+{
+display: block;
+}
+.fila3 img
+{
+    box-sizing: border-box;
+  
+    margin-top: 1%;
+    border: 2px solid white;
+    border-radius: 5%;
+    background-color: #cccccc;
+}
+.fila4 img
+{
+    box-sizing: border-box;
+  
+    margin-top: 1%;
+    border: 2px solid white;
+    border-radius: 5%;
+    background-color: #cccccc;
+}
+.btnJugar
+{
+    margin-bottom:5%;
+    width: 170px;
+    height: 170px;
+    margin-left:3%;
+    border-radius: 104px;
+    position: relative;
+    box-shadow: 0 2px 17px 0 black;
+}
+.animacion
+{
+    animation:shake 1s 1 ease-in-out;
+}
+}

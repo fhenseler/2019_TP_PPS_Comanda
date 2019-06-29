@@ -1,0 +1,137 @@
+page-tomar-pedido {
+
+    ion-navbar {
+        padding: 20px 10px !important;
+  
+        ion-icon {
+            color: white;
+            
+        }
+    }
+  
+    ion-navbar ion-icon { font-size: 50px !important; }
+    
+    .accordion-list {
+        //background: color($colors, light);
+        height: 100%;
+    }
+    .section {
+        //background: #fff;
+        color: #000;
+        margin-bottom: 4px;
+    }
+    .section-active {
+        background: #ffc400;
+        color: #fff;
+    }
+ 
+    .child {
+        //background: #e8e7e6;
+        color: #000;
+        margin-bottom: 4px;
+    }
+    .child-item {
+        //background: #f3f2f1;
+        padding: 10px;
+    }
+    .label {
+        margin: 0px;
+    }
+    .list {
+        margin-bottom: 4px;
+    }
+
+    .scroll-content {
+        background-color: #cccccc;
+      //  background-image: url('../../assets/imgs/gamma/blue.jpeg');
+        background-size: cover; 
+        background-position: center; 
+    }
+
+    .pregunta1, .pregunta2, .pregunta3, .pregunta4, .pregunta5, .pregunta6, .pregunta7, .pregunta8, .pregunta9, .pregunta10 
+    {
+        position: absolute;
+        z-index: 1000;
+        width:100%;
+        height:100%;
+        display:flex;
+        justify-content: center;
+        align-items:center; 
+        background: #0000009e;
+    }
+
+    .laPregunta1, .laPregunta2, .laPregunta3, .laPregunta4, .laPregunta5, .laPregunta6, .laPregunta7, .laPregunta8, .laPregunta9, .laPregunta10
+    {
+        width: 100%;
+        padding-bottom:5%;
+        background-color: white;
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        transition: .5s;
+    }
+
+    .laPregunta1 h2, .laPregunta2 h2, .laPregunta3 h2 , .laPregunta4 h2, .laPregunta5 h2 , .laPregunta6 h2 , .laPregunta7 h2 , .laPregunta8 h2 , .laPregunta9 h2 , .laPregunta10 h2   {
+        font-family: 'Lobster', cursive;
+     text-align: center;
+    }
+
+    .noMostrar
+    {
+        display: none;
+        transition: .5s;
+    }
+
+    .ion-md-alarm:before {
+        content: "\f274";
+        font-size:40px;
+    }
+
+    .ion-md-checkmark-circle:before {
+        content: "\f2bb";
+        font-size:40px;
+        padding-left: 200px;
+    }
+
+    .ion-md-restaurant:before {
+        content: "\f36c";
+        font-size: 70px;
+    }
+
+    .asdasd{
+        color: black!important;
+        font-size: 200%;
+        margin-bottom: 0px !important;
+        margin-top: 220px !important;
+        padding-top: 5px !important;
+        //text-align: center;
+        font-family: 'roboto';
+        text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
+        background-color:#2f2f2f;
+        height:100px;
+        text-align: center;
+        vertical-align: middle;
+        line-height: 100px; 
+        
+        
+
+    }
+
+    .titulo2{
+        color: white!important;
+        font-size: 300%;
+        margin-bottom: 0px !important;
+        margin-top: 2px !important;
+        padding-top: 5px !important;
+        text-align: center;
+        font-family: 'Roboto', cursive;
+        text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+      
+      
+      }
+
+
+
+    
+}
