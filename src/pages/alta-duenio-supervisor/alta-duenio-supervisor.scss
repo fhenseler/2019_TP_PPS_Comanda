@@ -1,0 +1,130 @@
+page-alta-duenio-supervisor {
+
+    ion-content {
+        background-color: #cccccc;
+     //   background-image: url('../../assets/imgs/alfa/supervisor-bgn.jpg');
+        background-size: cover; 
+        background-position: center;
+    }
+
+    ion-navbar {
+        padding: 20px 10px !important;
+
+        ion-icon {
+            color: white;
+        }
+    }
+
+    ion-navbar ion-icon { font-size: 50px !important; }
+
+    body {
+        width: 100%;
+    }
+
+    div.vertical-container {
+        display: flex;
+        background-size: cover;
+        font-family: roboto;
+
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+        background-color: rgba(0, 0, 0, 0.3);
+        padding-top: 20px;
+    }
+
+    div.header {
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+        align-items: center;
+        margin-top: 20px;
+    }
+
+    img {
+        width: 140px;
+        height: auto;
+    }
+
+    h1 {
+        font-size: 80px;
+        font-weight: 100;
+        color: color($colors, dark-grey);
+        font-family: lobster;
+        margin-bottom: 25px;
+    }
+
+    h2 {
+        width: 100%;
+        padding: 10px 0 10px 0;
+        font-family: cinzel;
+        text-align: center;
+        background-color: #2f2f2f;
+        color: white;
+    }
+
+    input, select {
+        width: 75%;
+        border: gray solid 2px;
+        padding: 10px;
+        margin: 20px 0 20px 0;
+        font-size: 25px;
+        transition-duration: .3s;
+        transition-property: border-bottom-color font-size;
+        background-color: rgba(255, 255, 255, 0.8);
+        caret-color: color($colors, dark-grey);
+    }
+
+    input:first-of-type {
+        margin-bottom: 3vh;
+    }
+
+    input:focus {
+        transform: scale(1.2);
+        border-color: color($colors, dark-grey);;
+        background-color: rgb(255, 255, 255); 
+    }
+
+    .alta {
+        padding: 30px;
+        width: 20ch;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 10px;
+        font-size: 20px;
+        text-transform: none;
+    }
+
+    .ocultar {
+        display: none !important;
+    }
+
+    .mostrar {
+        display: block !important;
+    }
+
+    .ocultar-fondo {
+        background-image: none;
+    }
+
+    .close {
+        width: 50px;
+        height: 50px;
+        display: none;
+        position: fixed;
+        z-index: 2;
+        bottom: 5%;
+        right: 5%;
+        font-size: 30px;
+        padding: 0;
+    }
+
+    .animation-target {
+        animation-name: jelly;
+        animation-duration: 1000ms;
+        animation-iteration-count: 1;
+        animation-timing-function: linear;
+        animation-fill-mode: both;
+    }
+
+}

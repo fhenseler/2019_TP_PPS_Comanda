@@ -1,0 +1,25 @@
+<ion-header>
+  <ion-navbar color="dark">
+
+    <!-- <ion-title>{{usuario.tipo}}</ion-title> -->
+
+    <ion-buttons end *ngIf="usuario.tipo != 'anonimo'">
+      <button ion-button (click)="Logout()">
+        <ion-icon name="close"></ion-icon>
+      </button>
+    </ion-buttons>
+
+  </ion-navbar>
+</ion-header>
+
+<ion-nav #content swipeBackEnabled="false"></ion-nav>
+
+<ion-content class="card-background-page" padding>
+
+  <button ion-button *ngFor="let item of juegos" (click)="Redireccionar(item.ruta)">
+    <div class="sombreado"></div>
+    <img src="../../assets/imgs/alfa/{{item.img}}" />
+    <span>{{item.accion}}</span>
+  </button>
+
+</ion-content>

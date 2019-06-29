@@ -1,0 +1,43 @@
+<!--<img class="background" src="../../assets/imgs/alfa/background.jpg" />-->
+
+<div class="usuarios">
+      
+    <button [class]="botonUsuarios" (click)="DesplegarUsuarios()">
+      <ion-icon name="arrow-down"></ion-icon>
+    </button>  
+    <div [class]="agrandar">
+      <button (click)="SetearUsuario('tec.jmfigueiras@gmail.com', '123456')">Dueño</button>
+      <button (click)="SetearUsuario('fhenseler3@gmail.com', '123456')">Supervisor</button>
+      <button (click)="SetearUsuario('mozo@gmail.com', '123456')">Mozo</button>
+      <button (click)="SetearUsuario('cocinero@gmail.com', '123456')">Cocinero</button>
+      <button (click)="SetearUsuario('bartender@gmail.com', '123456')">Bartender</button>
+      <button (click)="SetearUsuario('metre@gmail.com', '123456')">Metre</button>
+      <button (click)="SetearUsuario('repartidor@gmail.com', '123456')">Repartidor</button>
+      <button (click)="SetearUsuario('cjaviermollar@gmail.com', '123456')">Cliente</button>
+      <button (click)="IngresarComoAnonimo()">Anonimo</button>
+    </div> 
+
+  </div>
+
+<div class="vertical-container" (click)="NoDesplegarUsuarios()">
+
+  <div class="horizontal-container">
+    <div class="header">
+      <h1>Inicio</h1>
+      <img src="../../assets/imgs/alfa/logo.png" [class]="animation" />
+    </div>
+
+    <input type="text" placeholder="Correo electrónico" [(ngModel)]="correo" />
+    <input type="password" placeholder="Contraseña" [(ngModel)]="clave" />
+
+    <span>
+      ¿No tienes una cuenta?
+      <a (click)="Redireccionar()">Registrate</a>
+    </span>
+
+    <button ion-button outline color="light" (click)="Login()" 
+      [disabled]="estadoBoton">{{textoDelBoton}}</button>
+   
+
+  </div>
+</div>

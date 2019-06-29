@@ -1,0 +1,71 @@
+<ion-header>
+  <ion-navbar color="dark">
+
+    <!-- <ion-title>{{usuario.tipo}}</ion-title> -->
+
+    <ion-buttons end>
+      <button ion-button (click)="Logout()">
+        <ion-icon name="close"></ion-icon>
+      </button>
+    </ion-buttons>
+
+  </ion-navbar>
+</ion-header>
+
+<div [ngClass]="{'alert':true,'ocultar':ocultarAlert}">
+
+  <div class="alert-message animation-target">
+    <h1>{{alertTitulo}}</h1>
+    <p>{{alertMensaje}}</p>
+    <div class="botones">
+
+      <button ion-button outline (click)="alertHandler()">{{alertMensajeBoton}}</button>
+    </div>
+  </div>
+
+</div>
+
+<ion-content [ngClass]="{'ocultar-fondo': estado == 'ocultar'}">
+
+  <div class="vertical-container">
+
+    <img src="../../assets/imgs/alfa/logo.png">
+
+    <h1>Registro</h1>
+
+    <h2>Agregar un dueño o supervisor</h2>
+
+    <input type="text" placeholder="Correo electrónico" [(ngModel)]="correo" />
+    <input type="text" placeholder="Nombre" [(ngModel)]="nombre" />
+    <input type="text" placeholder="Apellido" [(ngModel)]="apellido" />
+
+    <div class="header" style="width: 75%;margin: 20px 0 20px 0;">
+      <input type="text" placeholder="DNI" style="margin: 0 15px 0 0; width: 50%" [(ngModel)]="dni" />
+      <input type="text" placeholder="CUIL" style="margin: 0;width: 50%" [(ngModel)]="cuil" />
+    </div>
+
+    <input type="password" placeholder="Contraseña" [(ngModel)]="clave" />
+
+    <select [(ngModel)]="tipo">
+      <option value="dueño">Dueño</option>
+      <option value="supervisor">Supervisor</option>
+    </select>
+
+    <img [src]="foto" alt="">
+
+    <div class="header" style="width: 75%;margin: 20px 0 20px 0;">
+      <button ion-button color="dark" class="alta" style="margin: 0 30px 0 0;width: 50%" (click)="SacarFoto()">Sacar
+        foto</button>
+      <button ion-button color="dark" class="alta" style="margin: 0;width: 50%" (click)="InicializarLectorQR()">QR</button>
+    </div>
+
+    <button ion-button color="dark" [disabled]="estadoBoton" class="alta" (click)="Registrar()">Registrar</button>
+  </div>
+
+  <button ion-button color="dark" class="close" (click)="OcultarLectorQR()">
+    <ion-icon name="close"></ion-icon>
+  </button>
+
+  <app-spinner [ngClass]="{'ocultar':!estadoBoton}"></app-spinner>
+
+</ion-content>
